@@ -1,0 +1,37 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Python (serve.py helper)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (in case)
+node_modules/
+
+# ---------------------------------------------------------------------------
+# Heavy image folders — excluded from git, host on CDN / Vercel separately.
+# These contain raw uncompressed PNGs (some >100MB) that GitHub will reject
+# and that should be optimized for web before being shipped.
+# ---------------------------------------------------------------------------
+Ecotones-ls/assets/images/caladium-leaves/
+Ecotones-ls/assets/images/stock-plant-images/
+Ecotones-ls/assets/images/elements/
+Ecotones-ls/assets/images/illustrations-icons-images-plants/
+Ecotones-ls/assets/images/single-plant-pots/
+Ecotones-ls/assets/images/Canticle-Creek*/
+Ecotones-ls/assets/images/grass/
+Ecotones-ls/assets/images/founder-Robert-Symens-Bucher1/
+Ecotones-ls/assets/images/ecotones-ls-plants/
+
+# Hard cap: never accidentally commit a single file over 100MB
+# (GitHub rejects files above this limit)
+*.psd
+*.ai
+*.sketch
+*.fig
