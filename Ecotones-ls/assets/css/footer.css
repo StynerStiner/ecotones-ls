@@ -252,3 +252,24 @@
 	position: relative;
 	margin-bottom: 30px;
 }
+/* ---------------------------------------------------------------------------
+ * Desktop / small-desktop footer layout
+ *
+ * Original Bootstrap classes collapse the big-columns at <992px (col-md-12),
+ * which makes the footer look "stacked" on any 13" laptop, iPad-landscape, or
+ * zoomed-in desktop browser. These overrides keep the 2-column big-column
+ * layout from 768px and up, with widgets stacked inside each big column.
+ * Phones (<768px) still get the original fully-stacked layout.
+ * ------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.main-footer .widgets-section > .row > .big-column {
+		flex: 0 0 auto;
+		width: 50%;
+		max-width: 50%;
+	}
+	.main-footer .widgets-section .big-column > .row > .footer_column {
+		flex: 0 0 auto;
+		width: 100%;
+		max-width: 100%;
+	}
+}
