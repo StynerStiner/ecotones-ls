@@ -1643,3 +1643,11 @@
 	}
 	
 }
+/* iOS Safari ignores background-attachment: fixed and renders hero
+   backgrounds blank on mobile. Force scroll attachment for touch / small
+   screens so .page-title hero images appear. */
+@media (max-width: 1024px), (hover: none) and (pointer: coarse) {
+	.page-title {
+		background-attachment: scroll;
+	}
+}
