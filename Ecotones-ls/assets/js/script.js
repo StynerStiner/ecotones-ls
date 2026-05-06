@@ -766,23 +766,57 @@
 		handlePreloader();
 	});
 
-	/* Mobile: collapse toggle for footer widgets */
+	/* Mobile: collapse toggle for footer widgets.
+	   Reacts to viewport changes so DevTools resizing / phone rotation /
+	   tablet ↔ desktop transitions don't leave the footer stuck in mobile
+	   collapsed state on larger screens. */
 	$(document).ready(function() {
-		if (window.matchMedia('(max-width: 767px)').matches) {
-			$('.contact-widget, .links-widget, .post-widget').each(function() {
+		var mq = window.matchMedia('(max-width: 767px)');
+		var widgets = '.contact-widget, .links-widget, .post-widget';
+		var bodySel = '.footer-contact_list, .footer-list, .news-widget-block';
+
+		function applyMobile() {
+			$(widgets).each(function() {
 				var $widget = $(this);
 				var $title = $widget.find('.footer-title').first();
-				var $body = $widget.find('.footer-contact_list, .footer-list, .news-widget-block');
+				var $body = $widget.find(bodySel);
 				if (!$title.length || !$body.length) return;
+				if ($title.data('footerCollapseInit')) return; // already initialized
+				$title.data('footerCollapseInit', true);
 				$body.hide();
 				$title.css({'cursor':'pointer','user-select':'none'});
 				$title.append('<span class="footer-toggle-indicator" style="float:right;font-weight:700;color:#6B8E5A;font-size:1.2em;transition:transform .3s ease;">+</span>');
-				$title.on('click', function() {
+				$title.on('click.footerCollapse', function() {
 					$body.slideToggle(220);
 					var $ind = $title.find('.footer-toggle-indicator');
 					$ind.text($ind.text() === '+' ? '−' : '+');
 				});
 			});
+		}
+
+		function applyDesktop() {
+			$(widgets).each(function() {
+				var $widget = $(this);
+				var $title = $widget.find('.footer-title').first();
+				var $body = $widget.find(bodySel);
+				if (!$title.length || !$body.length) return;
+				$title.data('footerCollapseInit', false);
+				$body.show();
+				$title.css({'cursor':'','user-select':''});
+				$title.find('.footer-toggle-indicator').remove();
+				$title.off('click.footerCollapse');
+			});
+		}
+
+		function evaluate() {
+			if (mq.matches) { applyMobile(); } else { applyDesktop(); }
+		}
+
+		evaluate();
+		if (typeof mq.addEventListener === 'function') {
+			mq.addEventListener('change', evaluate);
+		} else if (typeof mq.addListener === 'function') {
+			mq.addListener(evaluate); // older Safari fallback
 		}
 	});
 

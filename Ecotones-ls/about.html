@@ -9,44 +9,111 @@
   ============================================================
 -->
 
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Ecotones LS — Native Plant Nursery & Land Stewardship | About Us</title>
-<meta name="description" content="Meet Ecotones Land Stewardship — Robert Symens-Bucher and the bilingual EN/ES crews stewarding Northern California land through native plant nursery work, biochar, defensible space, and stream restoration.">
-<link rel="canonical" href="https://ecotonesls.com/about.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+<title>About Robert & Our Restoration Approach | Ecotones LS</title>
+<meta name="description" content="Meet Robert Symens-Bucher and learn how Ecotones LS practices watershed-specific, bilingual land stewardship across Northern California.">
+<link rel="canonical" href="https://ecotonesls.com/about">
+<meta name="author" content="Ecotones Land Stewardship">
+<meta name="robots" content="index,follow">
+<!-- TODO: hreflang en/es when /es/ launches -->
+
+<!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="About Ecotones LS — Long-View Land Stewardship in Northern California">
-<meta property="og:description" content="Meet Ecotones Land Stewardship — Robert Symens-Bucher and the bilingual EN/ES crews stewarding Northern California land through native plant nursery work, biochar, defensible space, and stream restoration.">
-<meta property="og:url" content="https://ecotonesls.com/about.html">
-<meta property="og:image" content="https://ecotonesls.com/assets/images/resource/about-founder-portrait.jpg">
 <meta property="og:site_name" content="Ecotones Land Stewardship">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="About Robert & Our Restoration Approach | Ecotones LS">
+<meta property="og:description" content="Meet Robert Symens-Bucher and learn how Ecotones LS practices watershed-specific, bilingual land stewardship across Northern California.">
+<meta property="og:url" content="https://ecotonesls.com/about">
+<meta property="og:image" content="https://ecotonesls.com/assets/images/og/og-about.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="About Ecotones LS — bilingual watershed stewardship in Northern California">
+
+<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About Ecotones LS — Long-View Land Stewardship in Northern California">
-<meta name="twitter:description" content="Meet Ecotones Land Stewardship — Robert Symens-Bucher and the bilingual EN/ES crews stewarding Northern California land through native plant nursery work, biochar, defensible space, and stream restoration.">
-<meta name="twitter:image" content="https://ecotonesls.com/assets/images/resource/about-founder-portrait.jpg">
+<meta name="twitter:title" content="About Robert & Our Restoration Approach | Ecotones LS">
+<meta name="twitter:description" content="Meet Robert Symens-Bucher and learn how Ecotones LS practices watershed-specific, bilingual land stewardship across Northern California.">
+<meta name="twitter:image" content="https://ecotonesls.com/assets/images/og/og-about.jpg">
+<meta name="twitter:image:alt" content="About Ecotones LS — bilingual watershed stewardship in Northern California">
+
+<!-- Structured data: Organization + AboutPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ecotonesls.com/#organization",
+      "name": "Ecotones Land Stewardship",
+      "alternateName": "Ecotones LS",
+      "url": "https://ecotonesls.com/",
+      "logo": "https://ecotonesls.com/assets/images/Logo-200x80.png",
+      "image": "https://ecotonesls.com/assets/images/og/og-about.jpg",
+      "email": "robert@ecotonesls.com",
+      "telephone": "+15108663143",
+      "knowsLanguage": ["en", "es"],
+      "founder": { "@id": "https://ecotonesls.com/#robert" },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Northern California"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1972 36th Ave",
+        "addressLocality": "Oakland",
+        "addressRegion": "CA",
+        "postalCode": "94601",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Northern California"
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://ecotonesls.com/about#webpage",
+      "url": "https://ecotonesls.com/about",
+      "name": "About Robert & Our Restoration Approach | Ecotones LS",
+      "description": "Meet Robert Symens-Bucher and learn how Ecotones LS practices watershed-specific, bilingual land stewardship across Northern California.",
+      "isPartOf": { "@id": "https://ecotonesls.com/#website" },
+      "about": { "@id": "https://ecotonesls.com/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecotonesls.com/" },
+        { "@type": "ListItem", "position": 2, "name": "About", "item": "https://ecotonesls.com/about" }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+
 <!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/meanmenu.min.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link href="/assets/css/meanmenu.min.css" rel="stylesheet">
+<link href="/assets/css/responsive.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
 <!-- Color Switcher Mockup -->
-<link href="assets/css/color-switcher-design.css" rel="stylesheet">
-
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<link href="/assets/css/color-switcher-design.css" rel="stylesheet">
 </head>
 
 <body>
@@ -113,7 +180,7 @@
 						<div class="left-box d-flex align-items-center flex-wrap">
 							<!-- Logo Box -->
 							<div class="logo-box">
-								<div class="logo"><a href="index.html"><img src="assets/images/Logo-200x80.png" alt="Ecotones LS" title="Ecotones Land Stewardship" width="200" height="80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));"></a></div>
+								<div class="logo"><a href="/"><img src="assets/images/Logo-200x80.png" alt="Ecotones LS" title="Ecotones Land Stewardship" width="200" height="80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));"></a></div>
 								<div class="brand-name" style="position:absolute; left:110px; top:50%; transform:translateY(-50%); color:#fff; font-weight:700; font-size:14px; line-height:1.15; letter-spacing:1px; text-transform:uppercase;">Ecotones<br>Land Stewardship</div>
 							</div>
 							<div class="nav-outer d-flex flex-wrap">
@@ -130,11 +197,11 @@
 									
 									<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 										<ul class="navigation clearfix">
-											<li><a href="index.html">Home</a></li>
-											<li class="current"><a href="about.html">About</a></li>
-											<li><a href="services.html">Services</a></li>
-											<li><a href="shop.html">Shop</a></li>
-											<li><a href="contact.html">Contact</a></li>
+											<li><a href="/">Home</a></li>
+											<li class="current"><a href="/about">About</a></li>
+											<li><a href="/services">Services</a></li>
+											<li><a href="/shop">Shop</a></li>
+											<li><a href="/contact">Contact</a></li>
 										</ul>
 									</div>
 								</nav>
@@ -189,7 +256,7 @@
 			<div class="close-btn"><span class="icon flaticon-close"></span></div>
 			
 			<nav class="menu-box">
-				<div class="nav-logo"><a href="index.html"><img src="assets/images/hamburger-menu-logo.png" alt="" title=""></a></div>
+				<div class="nav-logo"><a href="/"><img src="assets/images/hamburger-menu-logo.png" alt="" title=""></a></div>
 				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 			</nav>
 		</div>
@@ -306,7 +373,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/main-slider/about-hero-1.jpg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url(assets/images/portfolio/canticle-creek/creek-after-2.jpg)"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/pattern-1.png)"></div>
 					<div class="slider-one_pattern-two" style="background-image:url(assets/images/main-slider/pattern-2.png)"></div>
 					<div class="auto-container">
@@ -317,13 +384,13 @@
 								<div class="slider-one_bold">Stewardship Rooted In Place</div>
 								<div class="slider-one_text">A native plant nursery, biochar, defensible space, <br> ponds, stream restoration, and bilingual trainings.</div>
 								<div class="slider-one_button d-flex justify-content-center align-items-center flex-wrap">
-									<a href="contact.html" class="theme-btn btn-style-three">
+									<a href="/contact" class="theme-btn btn-style-three">
 										<span class="btn-wrap">
 											<span class="text-one">Request a Quote</span>
 											<span class="text-two">Request a Quote</span>
 										</span>
 									</a>
-									<a href="shop.html" class="theme-btn btn-style-four">
+									<a href="/shop" class="theme-btn btn-style-four">
 										<span class="btn-wrap">
 											<span class="text-one">Shop Plants</span>
 											<span class="text-two">Shop Plants</span>
@@ -341,7 +408,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/main-slider/about-hero-2.jpg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url(assets/images/portfolio/parkridge-pond/parkridge-2.jpg)"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/pattern-1.png)"></div>
 					<div class="slider-one_pattern-two" style="background-image:url(assets/images/main-slider/pattern-2.png)"></div>
 					<div class="auto-container">
@@ -352,13 +419,13 @@
 								<div class="slider-one_bold">Bilingual EN/ES Crews</div>
 								<div class="slider-one_text">Trainings, fieldwork, and consulting in two languages — <br> meeting people where they steward the land.</div>
 								<div class="slider-one_button d-flex justify-content-center align-items-center flex-wrap">
-									<a href="contact.html" class="theme-btn btn-style-three">
+									<a href="/contact" class="theme-btn btn-style-three">
 										<span class="btn-wrap">
 											<span class="text-one">Request a Quote</span>
 											<span class="text-two">Request a Quote</span>
 										</span>
 									</a>
-									<a href="shop.html" class="theme-btn btn-style-four">
+									<a href="/shop" class="theme-btn btn-style-four">
 										<span class="btn-wrap">
 											<span class="text-one">Shop Plants</span>
 											<span class="text-two">Shop Plants</span>
@@ -376,7 +443,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/main-slider/about-hero-3.jpg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url(assets/images/portfolio/training/training-2.jpg)"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/pattern-1.png)"></div>
 					<div class="slider-one_pattern-two" style="background-image:url(assets/images/main-slider/pattern-2.png)"></div>
 					<div class="auto-container">
@@ -387,13 +454,13 @@
 								<div class="slider-one_bold">Stewardship That Stays</div>
 								<div class="slider-one_text">From a single defensible-space day to a multi-year <br> restoration plan — we work at the pace of the land.</div>
 								<div class="slider-one_button d-flex justify-content-center align-items-center flex-wrap">
-									<a href="contact.html" class="theme-btn btn-style-three">
+									<a href="/contact" class="theme-btn btn-style-three">
 										<span class="btn-wrap">
 											<span class="text-one">Request a Quote</span>
 											<span class="text-two">Request a Quote</span>
 										</span>
 									</a>
-									<a href="shop.html" class="theme-btn btn-style-four">
+									<a href="/shop" class="theme-btn btn-style-four">
 										<span class="btn-wrap">
 											<span class="text-one">Shop Plants</span>
 											<span class="text-two">Shop Plants</span>
@@ -422,6 +489,8 @@
 	
 	<!-- Services Three -->
 	<section class="services-three">
+		<!-- Torn-paper top edge — same approach as /services Categories section. top:0 keeps it inside this section's bounds so it doesn't overlap the spinning wheel/logo at the bottom of the hero. -->
+		<div style="position:absolute; left:0; right:0; top:0; height:90px; background-image:url(assets/images/background/pattern-3c.png); background-repeat:no-repeat; background-position:center top; background-size:100% auto; pointer-events:none; z-index:3;"></div>
 		<div class="services-three_icon-two">
 			<img src="assets/images/icons/deco-areca.png" alt="" style="filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
 		</div>
@@ -437,7 +506,7 @@
 						<div class="services-block_three-icon">
 							<img src="assets/images/Icon-glyph/22.png" alt="" style="width:90px; height:90px; object-fit:contain;" />
 						</div>
-						<h4 class="services-block_three-title"><a href="#" data-disabled-href="service-detail.html">Pond Construction</a></h4>
+						<h4 class="services-block_three-title"><a href="#" data-disabled-href="/service-detail">Pond Construction</a></h4>
 						<div class="services-block_three-text">Quote-based stewardship work for your property.</div>
 					</div>
 				</div>
@@ -450,7 +519,7 @@
 						<div class="services-block_three-icon">
 							<img src="assets/images/Icon-glyph/21.png" alt="" style="width:90px; height:90px; object-fit:contain;" />
 						</div>
-						<h4 class="services-block_three-title"><a href="#" data-disabled-href="service-detail.html">Biochar Production</a></h4>
+						<h4 class="services-block_three-title"><a href="#" data-disabled-href="/service-detail">Biochar Production</a></h4>
 						<div class="services-block_three-text">Quote-based stewardship work for your property.</div>
 					</div>
 				</div>
@@ -461,7 +530,7 @@
 						<div class="services-block_three-vector" style="background-image:url(assets/images/icons/icon-26.png)"></div>
 						<div class="services-block_three-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
 						<div class="services-block_three-icon" style="font-size:36px; font-weight:700; color:#2D4A22; height:90px; line-height:90px;">EN/ES</div>
-						<h4 class="services-block_three-title"><a href="#" data-disabled-href="service-detail.html">Bilingual Trainings</a></h4>
+						<h4 class="services-block_three-title"><a href="#" data-disabled-href="/service-detail">Bilingual Trainings</a></h4>
 						<div class="services-block_three-text">Quote-based stewardship work for your property.</div>
 					</div>
 				</div>
@@ -517,7 +586,7 @@
 						<!-- End Feature Block One -->
 						
 						<div class="modern-one_button">
-							<a href="about.html" class="theme-btn btn-style-five">
+							<a href="/about" class="theme-btn btn-style-five">
 								<span class="btn-wrap">
 									<span class="text-one">Find out more</span>
 									<span class="text-two">Find out more</span>
@@ -613,10 +682,10 @@
 				<img src="assets/images/icons/icon-18.png" alt="" />
 			</div>
 			<!-- Left Box -->
-			<div class="left-box" style="background-image: url(assets/images/resource/fluid-1.jpg)">
+			<div class="left-box" style="background-image: url(assets/images/portfolio/training/training-1.jpg)">
 				<a href="https://www.youtube.com/watch?v=L337ZVBijFY" class="lightbox-video fluid-one_play"><span class="fa-solid fa-play fa-fw"><i class="ripple"></i></span></a>
 				<div class="fluid-one_image">
-					<img src="assets/images/resource/fluid-1.jpg" alt="" />
+					<img src="assets/images/portfolio/training/training-1.jpg" alt="" />
 				</div>
 				<div class="fluid-one_icon">
 					<img src="assets/images/icons/icon-17.png" alt="" />
@@ -673,51 +742,301 @@
 	<!-- End Fluid One -->
 	
 	<!-- Welcome One -->
-	<section class="welcome-one" style="position:relative; overflow:hidden;">
-		<img class="welcome-one_deco" src="assets/images/icons/deco-collection-3.png" alt="" style="position:absolute; top:30px; left:20px; width:110px; height:auto; z-index:1; pointer-events:none; opacity:0.85; filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
-		<img class="welcome-one_deco" src="assets/images/icons/deco-monstera2.png" alt="" style="position:absolute; top:60px; right:20px; width:140px; height:auto; z-index:1; pointer-events:none; filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
-		<img class="welcome-one_deco" src="assets/images/icons/deco-gardenia.png" alt="" style="position:absolute; top:50%; left:-20px; transform:translateY(-50%); width:230px; height:auto; z-index:1; pointer-events:none;" />
-		<img class="welcome-one_deco" src="assets/images/icons/deco-buddha.png" alt="" style="position:absolute; bottom:30px; right:30px; width:120px; height:auto; z-index:1; pointer-events:none; filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
-		<img class="welcome-one_deco" src="assets/images/icons/deco-min-monstera.png" alt="" style="position:absolute; bottom:-10px; left:-10px; width:180px; height:auto; z-index:1; pointer-events:none; transform:scaleX(-1);" />
-		<img class="welcome-one_deco" src="assets/images/icons/deco-collection-1.png" alt="" style="position:absolute; top:50%; right:-20px; transform:translateY(-50%); width:110px; height:auto; z-index:1; pointer-events:none; opacity:0.85; filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
+	<!-- Rooted In Northern California — mirrors the .about-one pattern from the home page ("Heal The Land, Grow The Future"). Image LEFT with stacked photos + counter badge, content RIGHT with sec-title + feature blocks + body + check. All existing classes, no orphan styling. -->
+	<section class="about-one" style="overflow:visible;">
+		<div style="position:absolute; left:0; top:0; right:0; bottom:0; background-image:url(assets/images/background/pattern-7.jpg); background-size:cover;"></div>
+		<div class="about-one-icon_one" style="background-image:url(assets/images/icons/icon-41.png)"></div>
+		<div class="about-one-icon_two" style="background-image:url(assets/images/icons/icon-42.png)"></div>
+		<div class="about-one-icon_five" style="background-image:url(assets/images/single-plant-pots/11.png); background-size:contain; background-repeat:no-repeat; width:260px; height:260px; bottom:-40px; z-index:50;"></div>
 		<div class="auto-container">
 			<div class="row clearfix">
-				<!-- Title Column -->
-				<div class="welcome-one_title-column col-lg-6 col-md-12 col-sm-12">
-					<div class="welcome-one_title-inner">
-						<div class="sec-title">
-							<h2 class="sec-title_heading">Rooted In <br> Northern California</h2>
-							<div class="sec-title_text">We're based in Oakland and work across Northern California — from coastal watersheds to inland forests. Every property is different, but the approach is the same: scope honestly, work at the pace of the land, and come back to make sure the work took.</div>
+				<!-- Image Column -->
+				<div class="about-one_image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="about-one_image-inner">
+						<div class="about-one-icon_three" style="background-image:url(assets/images/icons/icon-43.png)"></div>
+						<div class="about-one-icon_four" style="background-image:url(assets/images/icons/icon-44.png)"></div>
+						<div class="about-one_image">
+							<img src="assets/images/portfolio/canticle-pond/pond-1.jpg" alt="Canticle Pond &mdash; restored pond in Northern California" />
 						</div>
-						<div class="welcome-one_feature" style="padding-right:0;">
-							<h5 class="welcome-one_subtitle">We Steward Land Across Northern California</h5>
-							<div class="welcome-one_text">Defensible space, biochar, ponds, stream <br> restoration, and bilingual EN/ES trainings.</div>
-							<div class="welcome-one_feature-button" style="position:static; margin-top:25px;">
-								<a href="shop.html" class="theme-btn btn-style-eight">
-									<span class="btn-wrap">
-										<span class="text-one">Our Product</span>
-										<span class="text-two">Our Product</span>
-									</span>
-								</a>
-							</div>
+						<div class="about-one_image-two">
+							<img src="assets/images/portfolio/canticle-creek/creek-after-2.jpg" alt="Canticle Creek &mdash; restored riparian habitat" />
+						</div>
+						<div class="about-one_counter" style="background-image:url(assets/images/icons/icon-46.png)">
+							<span>NorCal</span> Coast to Inland
 						</div>
 					</div>
 				</div>
-				<!-- Image + Text Column -->
-				<div class="welcome-one_image-column col-lg-6 col-md-12 col-sm-12">
-					<div class="welcome-one_image-inner" style="position:relative;">
-						<div style="position:relative; height:520px; border-radius:8px; background-image:url(assets/images/resource/about-rooted.jpg); background-size:cover; background-position:center top; box-shadow:0 10px 40px rgba(0,0,0,0.12);"></div>
-						<div style="margin-top:28px; padding:24px 28px; background-color:#fff; border-left:4px solid #2D4A22; border-radius:4px; box-shadow:0 4px 18px rgba(0,0,0,0.06);">
-							<p style="font-size:15px; line-height:1.65; color:#5a6258; margin:0; font-style:italic;">"We pay attention to the whole watershed — soil, water, fire, people. The places we work today should keep working long after we leave."</p>
-							<div style="margin-top:14px; font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#2D4A22;">Robert Symens-Bucher · Founder</div>
+				<!-- Content Column -->
+				<div class="about-one_content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="about-one_content">
+						<div class="sec-title">
+							<div class="sec-title_title">Where We Work</div>
+							<h2 class="sec-title_heading">Rooted In <br> Northern California</h2>
+							<div class="sec-title_text">We're based in Oakland and work across Northern California &mdash; from coastal watersheds to inland forests. Every property is different, but the approach is the same: scope honestly, work at the pace of the land, and come back to make sure the work took.</div>
+						</div>
+
+						<!-- Feature Block Seven -->
+						<div class="feature-block_seven">
+							<div class="feature-block_seven-inner">
+								<div class="feature-block_seven-icon flaticon-care"></div>
+								<h4 class="feature-block_seven-title">Across The Region</h4>
+								Coastal watersheds, inland forests, and everything between
+							</div>
+						</div>
+						<!-- End Feature Block One -->
+
+						<!-- Feature Block Seven -->
+						<div class="feature-block_seven">
+							<div class="feature-block_seven-inner">
+								<div class="feature-block_seven-icon flaticon-language"></div>
+								<h4 class="feature-block_seven-title">Bilingual EN/ES Crews</h4>
+								Hands-on stewardship in English and Spanish
+							</div>
+						</div>
+						<!-- End Feature Block One -->
+
+						<div class="about-one_text"><em>&ldquo;We pay attention to the whole watershed &mdash; soil, water, fire, people. The places we work today should keep working long after we leave.&rdquo;</em> &mdash; Robert Symens-Bucher, Founder</div>
+
+						<!-- Check -->
+						<div class="about-one_check"><i><img src="assets/images/icons/icon-47.png" alt="" /></i> Native plant nursery &middot; biochar &middot; defensible space &middot; ponds &amp; stream restoration &middot; bilingual trainings</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Rooted In Northern California -->
+
+	<!-- Volunteer banner — mirrors the .subscribe-one pattern (same green banner with grass + icon decorations + centered title-box). Replaces the inline callout that was too easy to miss. -->
+	<section class="subscribe-one" style="position:relative; z-index:5; background-color:#6BA051; border-radius:18px; margin:40px clamp(16px, 4vw, 60px); overflow:hidden;">
+		<div class="auto-container">
+			<div class="subscribe-one_grass" style="background-image:url(assets/images/background/pattern-13-green.png)"></div>
+			<div class="subscribe-one_icon">
+				<img src="assets/images/icons/icon-14-volunteer.png" alt="" />
+			</div>
+			<div class="subscribe-one_icon-two">
+				<img src="assets/images/icons/icon-15-volunteer.png" alt="" />
+			</div>
+			<div class="inner-container">
+				<div class="title-box centered">
+					<h2 class="subscribe-one_heading">Volunteer On The Land</h2>
+					<div class="subscribe-one_text">Workdays, restoration projects, and bilingual EN/ES crew days &mdash; come learn the land alongside us.</div>
+				</div>
+				<div class="newsletter-box" style="text-align:center;">
+					<style>
+						/* Volunteer CTA hover override — banner background is sage #6BA051,
+						   default btn-style-one hover fills with fern green #2D4A22 which
+						   reads as another green on the banner. Switch the hover fill to
+						   the dark fern #14322a so it clearly contrasts the banner. */
+						.volunteer-cta.btn-style-one:before { background-color: #6B8E5A !important; }
+					</style>
+					<a href="/contact?topic=volunteer" class="theme-btn btn-style-one volunteer-cta">
+						<span class="btn-wrap">
+							<span class="text-one">Get In Touch</span>
+							<span class="text-two">Get In Touch</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Volunteer Banner -->
+
+	<!-- Canticle Creek — mirrors the .modern-one pattern with CONTENT LEFT / IMAGE RIGHT (matches the original column order, so the image's bleed-right margin stays off-page and never crosses the text). -->
+	<section class="modern-one">
+		<div class="modern-one_pattern" style="background-image:url(assets/images/background/pattern-3.png)"></div>
+		<div class="modern-one_icon">
+			<img src="assets/images/icons/icon-3.png" alt="" />
+		</div>
+		<div class="modern-one_icon-two">
+			<img src="assets/images/icons/deco-monstera.png" alt="" style="filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
+		</div>
+
+		<div class="auto-container">
+			<div class="row clearfix">
+
+				<!-- Content Column (LEFT) -->
+				<div class="modern-one_content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="modern-one_content">
+						<div class="sec-title">
+							<div class="sec-title_title">Selected Project</div>
+							<h2 class="sec-title_heading">Canticle Creek &mdash; <br> Riparian Restoration</h2>
+							<div class="sec-title_text">A multi-season restoration on Canticle Creek &mdash; from a degraded channel to a stabilized stream with native plantings, sediment control, and habitat that holds water on the land long after the crews leave.</div>
+						</div>
+
+						<!-- Feature Block One -->
+						<div class="feature-block_one alternate">
+							<div class="feature-block_one-inner">
+								<div class="feature-block_one-icon flaticon-natural"></div>
+								<h4 class="feature-block_one-title">Bank Stabilization</h4>
+								Native plantings and grade work that hold the channel through wet-season flows.
+							</div>
+						</div>
+						<!-- End Feature Block One -->
+
+						<!-- Check -->
+						<div class="modern-one_check"><i><img src="assets/images/icons/check.png" alt="" /></i> Worked at the pace of the land &mdash; assessed first, planted in season, returned to verify what took.</div>
+
+						<!-- Feature Block One -->
+						<div class="feature-block_one">
+							<div class="feature-block_one-inner">
+								<div class="feature-block_one-icon flaticon-organic"></div>
+								<h4 class="feature-block_one-title">Native Riparian Planting</h4>
+								California-sourced sedges, willows, and bunchgrasses propagated in our nursery for this watershed.
+							</div>
+						</div>
+						<!-- End Feature Block One -->
+
+						<div class="modern-one_button">
+							<a href="/services" class="theme-btn btn-style-five">
+								<span class="btn-wrap">
+									<span class="text-one">See Our Services</span>
+									<span class="text-two">See Our Services</span>
+								</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Image Column (RIGHT) -->
+				<div class="modern-one_image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="modern-one_image">
+						<img src="assets/images/portfolio/canticle-creek/creek-after-2.jpg" alt="Canticle Creek &mdash; restored riparian channel" />
+					</div>
+					<div class="modern-one_image-two">
+						<img src="assets/images/portfolio/canticle-creek/creek-before-1.jpg" alt="Canticle Creek before restoration &mdash; degraded channel" />
+					</div>
+					<div class="modern-one_icon-three">
+						<img src="assets/images/icons/icon-5.png" alt="" />
+					</div>
+					<div class="modern-one_circle" style="background-image:url(assets/images/icons/icon-6.png)"></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Canticle Creek -->
+
+	<!-- Canticle Pond — uses .fluid-one BASE pattern + UNIQUE class .canticle-pond-section. Going forward, ALL modifications to this section MUST target .canticle-pond-section ONLY (never bare .fluid-one) so other fluid-one instances on /index, /services aren't affected. -->
+	<section class="fluid-one canticle-pond-section">
+		<div class="outer-container clearfix">
+			<div class="fluid-one_icon-two">
+				<img src="assets/images/icons/icon-18.png" alt="" />
+			</div>
+			<!-- Left Box -->
+			<div class="left-box" style="background-image: url(assets/images/portfolio/canticle-pond/pond-clip-poster.jpg)">
+				<a href="assets/images/portfolio/canticle-pond/pond-clip.mp4" class="lightbox-video fluid-one_play" aria-label="Play Canticle Pond video"><span class="fa-solid fa-play fa-fw"><i class="ripple"></i></span></a>
+				<div class="fluid-one_image">
+					<img src="assets/images/portfolio/canticle-pond/pond-clip-poster.jpg" alt="Canticle Pond &mdash; restored pond habitat" />
+				</div>
+				<div class="fluid-one_icon">
+					<img src="assets/images/icons/icon-17.png" alt="" />
+				</div>
+			</div>
+			<!-- Right Box -->
+			<div class="right-box">
+				<div class="right-box_inner">
+					<div class="sec-title">
+						<div class="sec-title_title">Featured Project</div>
+						<h2 class="sec-title_heading">Canticle Pond &mdash; <br> Pond Build</h2>
+						<div class="sec-title_text">A working pond designed to hold water on the land &mdash; from the initial earthwork and grade through native edge planting and slow integration with the surrounding landscape.</div>
+					</div>
+					<div class="row clearfix">
+						<div class="column col-lg-6 col-md-6 col-sm-6">
+							<!-- Feature Block Two -->
+							<div class="feature-block_two">
+								<div class="feature-block_two-inner">
+									<div class="feature-block_two-content">
+										<div class="feature-block_two-icon" style="font-size:24px;">EARTH</div>
+										<strong>Grade &amp; Earthwork</strong>
+										Sized for the watershed, not against it
+									</div>
+								</div>
+							</div>
+
+							<!-- Feature Block Two -->
+							<div class="feature-block_two alternate">
+								<div class="feature-block_two-inner">
+									<div class="feature-block_two-content">
+										<div class="feature-block_two-icon" style="font-size:22px; line-height:80px;">EDGE</div>
+										<strong>Native Edge Planting</strong>
+										Sedges, rushes, and bunchgrasses
+									</div>
+								</div>
+							</div>
+
+							<!-- Feature Block Two — third block keeps the left column at-or-above the right column's height after the Habitat caption was moved over there -->
+							<div class="feature-block_two">
+								<div class="feature-block_two-inner">
+									<div class="feature-block_two-content">
+										<div class="feature-block_two-icon" style="font-size:22px; line-height:80px;">CARE</div>
+										<strong>Long-Term Care</strong>
+										Returned each season to verify the system held
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="column col-lg-6 col-md-6 col-sm-6">
+							<div class="fluid-one_image-two" style="margin-top:5px; margin-bottom:0; position:relative; z-index:1;">
+								<img src="assets/images/portfolio/canticle-pond/pond-2.jpg" alt="Canticle Pond &mdash; native edge planting" style="box-shadow:0 14px 30px rgba(0,0,0,0.18);" />
+							</div>
+
+							<div class="fluid-one_image-two" style="margin-top:-60px; margin-left:60px; margin-right:-80px; margin-bottom:32px; position:relative; z-index:2;">
+								<img src="assets/images/portfolio/canticle-pond/pond-8092.jpg" alt="Canticle Pond &mdash; restoration site" style="box-shadow:0 18px 36px rgba(0,0,0,0.22);" />
+							</div>
+
+							<div class="fluid-one_content canticle-pond_caption" style="padding-left:60px; margin-top:-18px;">
+								<h5>Habitat That Holds</h5>
+								<p>Ponds work when the ecology around them does. We size, plant, and revisit each pond so the system holds water and life over decades &mdash; not just the year it was dug.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- End Welcome One -->
-	
+	<!-- End Canticle Pond -->
+
+	<!-- Parkridge Pond — uses .discount-one BASE pattern + UNIQUE class .parkridge-section. Going forward, ALL modifications to this section MUST target .parkridge-section ONLY (never bare .discount-one) so other discount-one instances on /services, /index aren't affected. -->
+	<section class="discount-one parkridge-section">
+		<div class="discount-one_pattern" style="background-image:url(assets/images/background/pattern-7.jpg)"></div>
+		<div class="auto-container">
+			<div class="row clearfix">
+
+				<!-- Image Column (LEFT) -->
+				<div class="discount-one_image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="discount-one_image">
+						<img src="assets/images/portfolio/parkridge-pond/parkridge-3.jpg" alt="Parkridge Pond &mdash; restored pond habitat" />
+					</div>
+				</div>
+
+				<!-- Content Column (RIGHT) -->
+				<div class="discount-one_content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="discount-one_content">
+						<div class="sec-title" style="margin-bottom:18px;">
+							<div class="sec-title_title">Long-Term Project</div>
+						</div>
+						<h2 class="discount-one_heading">Parkridge Pond &mdash; Pond Stewardship</h2>
+						<div class="discount-one_text">A multi-phase pond restoration at Parkridge &mdash; channel work, native plantings around the edge, and seasonal monitoring to confirm the system holds water and habitat through wet and dry years.</div>
+
+						<div class="discount-box">
+							<div class="discount-box_inner">
+								<div class="discount-box_price">5+ <span>Phases</span></div>
+								<h3>Long-Term Project</h3>
+								<p>Earthwork, riparian planting, and ongoing stewardship &mdash; assessed first, planted in season, then revisited each year to verify what took.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Parkridge Pond -->
+
 	<!-- Team One -->
 	<section class="team-one" style="position:relative; overflow:hidden;">
 		<div class="team-one_bg" style="background-image:url(assets/images/background/pattern-7.jpg)"></div>
@@ -911,7 +1230,7 @@
 	<!-- Support One -->
 	<section class="support-one style-two">
 		<div class="team-one_bg" style="background-image:url(assets/images/background/pattern-7.jpg)"></div>
-		<div class="support-one_color-layer"></div>
+		<div class="support-one_color-layer" style="background-color: #6BA051;"></div>
 		<div class="support-one_grass" style="background-image:url(assets/images/background/pattern-19.png)"></div>
 		<div class="support-one_icon">
 			<img src="assets/images/icons/icon-11.png" alt="" />
@@ -1003,7 +1322,7 @@
 								<h2 class="support-one_title">We Grow Native Plants In Harmony With The Land</h2>
 								<!-- Button Box -->
 								<div class="support-one_button">
-									<a href="shop.html" class="theme-btn btn-style-six">
+									<a href="/shop" class="theme-btn btn-style-six">
 										<span class="btn-wrap">
 											<span class="text-one">Shop Native Plants</span>
 											<span class="text-two">Shop Native Plants</span>
@@ -1021,7 +1340,7 @@
 	<!-- Support One -->
 	
 	<!-- Subscribe One -->
-	<section class="subscribe-one" style="position:relative; z-index:5;">
+	<section class="subscribe-one" style="position:relative; z-index:5; background-color:#6BA051;">
 		<div class="auto-container">
 			<div class="subscribe-one_grass" style="background-image:url(assets/images/background/pattern-13.png)"></div>
 			<div class="subscribe-one_icon">
@@ -1064,7 +1383,7 @@
 								<!-- Footer Column -->
 								<div class="footer_column col-lg-6 col-md-6 col-sm-12">
 									<div class="footer-widget footer-two_logo-widget">
-										<div class="footer-logo" style="position:relative; display:inline-block; background-color:var(--main-color); padding:0 50px 0 20px; margin-bottom:25px;"><div style="position:relative; padding:5px 0;"><a href="index.html"><img src="assets/images/Logo-200x80.png" alt="Ecotones LS" title="Ecotones Land Stewardship" width="200" height="80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));"></a></div><div style="position:absolute; left:110px; top:50%; transform:translateY(-50%); color:#fff; font-weight:700; font-size:14px; line-height:1.15; letter-spacing:1px; text-transform:uppercase;">Ecotones<br>Land Stewardship</div></div>
+										<div class="footer-logo" style="position:relative; display:inline-block; background-color:var(--main-color); padding:0 50px 0 20px; margin-bottom:25px;"><div style="position:relative; padding:5px 0;"><a href="/"><img src="assets/images/Logo-200x80.png" alt="Ecotones LS" title="Ecotones Land Stewardship" width="200" height="80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));"></a></div><div style="position:absolute; left:110px; top:50%; transform:translateY(-50%); color:#fff; font-weight:700; font-size:14px; line-height:1.15; letter-spacing:1px; text-transform:uppercase;">Ecotones<br>Land Stewardship</div></div>
 										<div class="footer-text">Native plant nursery, biochar, defensible space, ponds, stream restoration, and bilingual trainings — rooted in long-term care of California land.</div>
 										<!-- Social Box -->
 										<div class="footer_socials">
@@ -1100,11 +1419,11 @@
 									<div class="footer-widget links-widget">
 										<h5 class="footer-title">Quick Links</h5>
 										<ul class="footer-list">
-											<li><a href="shop.html">Plant Nursery</a></li>
-											<li><a href="services.html">Services</a></li>
-											<li><a href="services.html">Trainings</a></li>
-											<li><a href="about.html">About</a></li>
-											<li><a href="contact.html">Request a Quote</a></li>
+											<li><a href="/shop">Plant Nursery</a></li>
+											<li><a href="/services">Services</a></li>
+											<li><a href="/services">Trainings</a></li>
+											<li><a href="/about">About</a></li>
+											<li><a href="/contact">Request a Quote</a></li>
 										</ul>
 										
 									</div>
@@ -1143,7 +1462,7 @@
 			</div>
 			<div class="footer-bottom">
 				<div class="main-footer_copyright">© 2026 Ecotones Land Stewardship<br><span class="copyright-owner">Robert Symens-Bucher, Founder &amp; Owner</span></div>
-				<div class="footer-legal" style="text-align:center; padding:0 0 30px; font-size:14px;"><a href="privacy-policy.html" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Privacy Policy</a><span style="color:#2D4A22;">·</span><a href="terms-of-service.html" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Terms of Service</a><span style="color:#2D4A22;">·</span><a href="cookie-policy.html" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Cookie Policy</a><span style="color:#2D4A22;">·</span><a href="accessibility.html" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Accessibility</a><span style="color:#2D4A22;">·</span><a href="https://www.stynerdev.com/" target="_blank" rel="noopener" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Site by StynerDev</a></div>
+				<div class="footer-legal" style="text-align:center; padding:0 0 30px; font-size:14px;"><a href="/privacy-policy" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Privacy Policy</a><span style="color:#2D4A22;">·</span><a href="/terms-of-service" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Terms of Service</a><span style="color:#2D4A22;">·</span><a href="/cookie-policy" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Cookie Policy</a><span style="color:#2D4A22;">·</span><a href="/accessibility" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Accessibility</a><span style="color:#2D4A22;">·</span><a href="https://www.stynerdev.com/" target="_blank" rel="noopener" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Site by StynerDev</a></div>
 			</div>
 		</div>
 	</footer>

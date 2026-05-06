@@ -1,8 +1,6 @@
-# Ecotones Land Stewardship — robots.txt
 User-agent: *
 Allow: /
-Disallow: /assets/css/
-Disallow: /assets/js/
-Disallow: /assets/fonts/
+Disallow: /thank-you
+Disallow: /404
 
 Sitemap: https://ecotonesls.com/sitemap.xml

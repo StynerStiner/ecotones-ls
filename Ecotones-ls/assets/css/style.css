@@ -2091,8 +2091,12 @@
 .subscribe-one_icon{
 	position:absolute;
 	left:110px;
-	top:110px;
+	top:40px;
 	z-index:1;
+}
+.subscribe-one_icon img{
+	width:205px;
+	height:auto;
 }
 
 .subscribe-one_icon-two{
@@ -2100,6 +2104,10 @@
 	right:100px;
 	top:50px;
 	z-index:1;
+}
+.subscribe-one_icon-two img{
+	width:230px;
+	height:auto;
 }
 
 .subscribe-one_grass{
@@ -2390,21 +2398,22 @@
 	top:180px;
 	right:30px;
 	z-index:1;
-	width:273px;
-	height:276px;
-	font-size:80px;
+	width:170px;
+	height:172px;
+	font-size:46px;
 	font-weight:700;
-	padding-top:65px;
+	padding-top:40px;
 	text-align:center;
-	line-height:80px;
+	line-height:48px;
 	color:var(--white-color);
 	background-repeat:no-repeat;
+	background-size:contain;
 }
 
 .slider-two_counter span{
 	position:relative;
 	display:block;
-	font-size:52px;
+	font-size:30px;
 	font-weight:600;
 }
 
@@ -4063,7 +4072,10 @@
 .services-block_four-image img{
 	position:relative;
 	width:100%;
+	height:220px;
+	object-fit:cover;
 	display:block;
+	border-radius:8px;
 }
 
 .services-block_four-arrow{
@@ -4249,7 +4261,7 @@
 	position: relative;
 	float: left;
 	width: 53%;
-	padding: 170px 60px 190px 15px;
+	padding: 80px 60px 80px 15px;
 }
 
 .fluid-two .left-box_inner{

@@ -9,44 +9,185 @@
   ============================================================
 -->
 
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Ecotones LS — Native Plant Nursery & Land Stewardship | Services</title>
-<meta name="description" content="Land stewardship services across Northern California — biochar, defensible space, fuels reduction, native plant nursery, stream restoration, ponds, and bilingual EN/ES trainings. Quote-based scoping.">
-<link rel="canonical" href="https://ecotonesls.com/services.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+<title>Land Stewardship Services in Northern CA | Ecotones LS</title>
+<meta name="description" content="Native plant nursery, biochar, defensible space, pond construction, stream restoration, and bilingual trainings — all on a quote basis.">
+<link rel="canonical" href="https://ecotonesls.com/services">
+<meta name="author" content="Ecotones Land Stewardship">
+<meta name="robots" content="index,follow">
+<!-- TODO: hreflang en/es when /es/ launches -->
+
+<!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Services — Defensible Space, Biochar, Stream Restoration | Ecotones LS">
-<meta property="og:description" content="Land stewardship services across Northern California — biochar, defensible space, fuels reduction, native plant nursery, stream restoration, ponds, and bilingual EN/ES trainings. Quote-based scoping.">
-<meta property="og:url" content="https://ecotonesls.com/services.html">
-<meta property="og:image" content="https://ecotonesls.com/assets/images/resource/svc-stream.jpg">
 <meta property="og:site_name" content="Ecotones Land Stewardship">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Land Stewardship Services in Northern CA | Ecotones LS">
+<meta property="og:description" content="Native plant nursery, biochar, defensible space, pond construction, stream restoration, and bilingual trainings — all on a quote basis.">
+<meta property="og:url" content="https://ecotonesls.com/services">
+<meta property="og:image" content="https://ecotonesls.com/assets/images/og/og-services.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ecotones LS stewardship services — biochar, defensible space, restoration, ponds, bilingual trainings">
+
+<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Services — Defensible Space, Biochar, Stream Restoration | Ecotones LS">
-<meta name="twitter:description" content="Land stewardship services across Northern California — biochar, defensible space, fuels reduction, native plant nursery, stream restoration, ponds, and bilingual EN/ES trainings. Quote-based scoping.">
-<meta name="twitter:image" content="https://ecotonesls.com/assets/images/resource/svc-stream.jpg">
+<meta name="twitter:title" content="Land Stewardship Services in Northern CA | Ecotones LS">
+<meta name="twitter:description" content="Native plant nursery, biochar, defensible space, pond construction, stream restoration, and bilingual trainings — all on a quote basis.">
+<meta name="twitter:image" content="https://ecotonesls.com/assets/images/og/og-services.jpg">
+<meta name="twitter:image:alt" content="Ecotones LS stewardship services — biochar, defensible space, restoration, ponds, bilingual trainings">
+
+<!-- Structured data: Organization + Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ecotonesls.com/#organization",
+      "name": "Ecotones Land Stewardship",
+      "alternateName": "Ecotones LS",
+      "url": "https://ecotonesls.com/",
+      "logo": "https://ecotonesls.com/assets/images/Logo-200x80.png",
+      "image": "https://ecotonesls.com/assets/images/og/og-services.jpg",
+      "email": "robert@ecotonesls.com",
+      "telephone": "+15108663143",
+      "knowsLanguage": ["en", "es"],
+      "founder": { "@id": "https://ecotonesls.com/#robert" },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Northern California"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1972 36th Ave",
+        "addressLocality": "Oakland",
+        "addressRegion": "CA",
+        "postalCode": "94601",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Northern California"
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://ecotonesls.com/services#services-list",
+      "name": "Ecotones LS Services",
+      "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "name": "Native Plant Nursery",
+          "description": "Drought-adapted, pollinator-friendly California native plants grown in Northern California for restoration, defensible-space, and homestead landscapes.",
+          "provider": { "@id": "https://ecotonesls.com/#organization" },
+          "areaServed": { "@type": "Place", "name": "Northern California" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "name": "Biochar Production",
+          "description": "On-site biochar production from defensible-space and fuels-reduction biomass; used as a soil amendment that holds water, supports microbes, and stores carbon.",
+          "provider": { "@id": "https://ecotonesls.com/#organization" },
+          "areaServed": { "@type": "Place", "name": "Northern California" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "name": "Defensible Space",
+          "description": "Wildfire fuel reduction following CAL FIRE's zone-based approach (Zones 0/1/2) to harden homes and reduce ignition risk.",
+          "provider": { "@id": "https://ecotonesls.com/#organization" },
+          "areaServed": { "@type": "Place", "name": "Northern California" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Service",
+          "name": "Fuels Reduction",
+          "description": "Crew-based mechanical thinning, pruning, and biomass removal at parcel and landscape scale to reduce fire intensity.",
+          "provider": { "@id": "https://ecotonesls.com/#organization" },
+          "areaServed": { "@type": "Place", "name": "Northern California" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Service",
+          "name": "Stream Restoration",
+          "description": "Watershed-specific restoration of streams, creeks, and riparian zones — bank stabilization, native plantings, and erosion control.",
+          "provider": { "@id": "https://ecotonesls.com/#organization" },
+          "areaServed": { "@type": "Place", "name": "Northern California" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Service",
+          "name": "Pond Construction",
+          "description": "Wildlife and water-storage pond construction designed for habitat value, including planning, permitting, and native plantings.",
+          "provider": { "@id": "https://ecotonesls.com/#organization" },
+          "areaServed": { "@type": "Place", "name": "Northern California" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "Service",
+          "name": "Bilingual EN/ES Trainings",
+          "description": "Hands-on field trainings in English and Spanish on defensible space, biochar, native-plant ID, and crew safety for landowners and partner organizations.",
+          "provider": { "@id": "https://ecotonesls.com/#organization" },
+          "areaServed": { "@type": "Place", "name": "Northern California" }
+        }
+      }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ecotonesls.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://ecotonesls.com/services" }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+
 <!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/meanmenu.min.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link href="/assets/css/meanmenu.min.css" rel="stylesheet">
+<link href="/assets/css/responsive.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
 <!-- Color Switcher Mockup -->
-<link href="assets/css/color-switcher-design.css" rel="stylesheet">
-
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<link href="/assets/css/color-switcher-design.css" rel="stylesheet">
 </head>
 
 <body>
@@ -113,7 +254,7 @@
 						<div class="left-box d-flex align-items-center flex-wrap">
 							<!-- Logo Box -->
 							<div class="logo-box">
-								<div class="logo"><a href="index.html"><img src="assets/images/Logo-200x80.png" alt="Ecotones LS" title="Ecotones Land Stewardship" width="200" height="80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));"></a></div>
+								<div class="logo"><a href="/"><img src="assets/images/Logo-200x80.png" alt="Ecotones LS" title="Ecotones Land Stewardship" width="200" height="80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));"></a></div>
 								<div class="brand-name" style="position:absolute; left:110px; top:50%; transform:translateY(-50%); color:#fff; font-weight:700; font-size:14px; line-height:1.15; letter-spacing:1px; text-transform:uppercase;">Ecotones<br>Land Stewardship</div>
 							</div>
 							<div class="nav-outer d-flex flex-wrap">
@@ -130,11 +271,11 @@
 									
 									<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 										<ul class="navigation clearfix">
-											<li><a href="index.html">Home</a></li>
-											<li><a href="about.html">About</a></li>
-											<li class="current"><a href="services.html">Services</a></li>
-											<li><a href="shop.html">Shop</a></li>
-											<li><a href="contact.html">Contact</a></li>
+											<li><a href="/">Home</a></li>
+											<li><a href="/about">About</a></li>
+											<li class="current"><a href="/services">Services</a></li>
+											<li><a href="/shop">Shop</a></li>
+											<li><a href="/contact">Contact</a></li>
 										</ul>
 									</div>
 								</nav>
@@ -189,7 +330,7 @@
 			<div class="close-btn"><span class="icon flaticon-close"></span></div>
 			
 			<nav class="menu-box">
-				<div class="nav-logo"><a href="index.html"><img src="assets/images/hamburger-menu-logo.png" alt="" title=""></a></div>
+				<div class="nav-logo"><a href="/"><img src="assets/images/hamburger-menu-logo.png" alt="" title=""></a></div>
 				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 			</nav>
 		</div>
@@ -306,7 +447,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/main-slider/services-hero-1.jpg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url(assets/images/portfolio/canticle-creek/creek-after-2.jpg); background-size: cover; background-position: center"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/pattern-1.png)"></div>
 					<div class="slider-one_pattern-two" style="background-image:url(assets/images/main-slider/pattern-2.png)"></div>
 					<div class="auto-container">
@@ -317,13 +458,13 @@
 								<div class="slider-one_bold">Land Stewardship Services</div>
 								<div class="slider-one_text">Quote-based land care — biochar, defensible space, <br> ponds, stream restoration, and bilingual trainings.</div>
 								<div class="slider-one_button d-flex justify-content-center align-items-center flex-wrap">
-									<a href="contact.html" class="theme-btn btn-style-three">
+									<a href="/contact" class="theme-btn btn-style-three">
 										<span class="btn-wrap">
 											<span class="text-one">Request a Quote</span>
 											<span class="text-two">Request a Quote</span>
 										</span>
 									</a>
-									<a href="shop.html" class="theme-btn btn-style-four">
+									<a href="/shop" class="theme-btn btn-style-four">
 										<span class="btn-wrap">
 											<span class="text-one">Shop Plants</span>
 											<span class="text-two">Shop Plants</span>
@@ -341,7 +482,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/main-slider/services-hero-2.jpg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url(assets/images/portfolio/training/training-6.jpg); background-size: cover; background-position: center"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/pattern-1.png)"></div>
 					<div class="slider-one_pattern-two" style="background-image:url(assets/images/main-slider/pattern-2.png)"></div>
 					<div class="auto-container">
@@ -352,13 +493,13 @@
 								<div class="slider-one_bold">Bilingual Trainings (EN/ES)</div>
 								<div class="slider-one_text">Hands-on workshops for crews, landowners, <br> and partner organizations.</div>
 								<div class="slider-one_button d-flex justify-content-center align-items-center flex-wrap">
-									<a href="contact.html" class="theme-btn btn-style-three">
+									<a href="/contact" class="theme-btn btn-style-three">
 										<span class="btn-wrap">
 											<span class="text-one">Request a Quote</span>
 											<span class="text-two">Request a Quote</span>
 										</span>
 									</a>
-									<a href="shop.html" class="theme-btn btn-style-four">
+									<a href="/shop" class="theme-btn btn-style-four">
 										<span class="btn-wrap">
 											<span class="text-one">Shop Plants</span>
 											<span class="text-two">Shop Plants</span>
@@ -376,7 +517,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/main-slider/services-hero-3.jpg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url(assets/images/portfolio/parkridge-pond/parkridge-5.jpg); background-size: cover; background-position: center"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/pattern-1.png)"></div>
 					<div class="slider-one_pattern-two" style="background-image:url(assets/images/main-slider/pattern-2.png)"></div>
 					<div class="auto-container">
@@ -387,13 +528,13 @@
 								<div class="slider-one_bold">Restoration That Stays</div>
 								<div class="slider-one_text">From defensible space to stream restoration — <br> stewardship rooted in long-term care.</div>
 								<div class="slider-one_button d-flex justify-content-center align-items-center flex-wrap">
-									<a href="contact.html" class="theme-btn btn-style-three">
+									<a href="/contact" class="theme-btn btn-style-three">
 										<span class="btn-wrap">
 											<span class="text-one">Request a Quote</span>
 											<span class="text-two">Request a Quote</span>
 										</span>
 									</a>
-									<a href="shop.html" class="theme-btn btn-style-four">
+									<a href="/shop" class="theme-btn btn-style-four">
 										<span class="btn-wrap">
 											<span class="text-one">Shop Plants</span>
 											<span class="text-two">Shop Plants</span>
@@ -421,8 +562,13 @@
 	<!-- End Main Slider Section -->
 	
 	<!-- Category One -->
-	<section class="category-one">
+	<!-- Categories — mirrors the home page .category-one pattern exactly: clean 4-card row with patterned background + corner decoration. No orphan founder-image block. -->
+	<section class="category-one" style="position:relative; overflow:visible;">
 		<div class="category-one_pattern style-two" style="background-image:url(assets/images/background/pattern-1.jpg)"></div>
+		<!-- Torn-paper top edge — pairs with the bottom torn edge baked into pattern-1.jpg -->
+		<div style="position:absolute; left:0; right:0; top:0; height:220px; background-image:url(assets/images/background/pattern-3b.png); background-repeat:no-repeat; background-position:center top; background-size:100% auto; pointer-events:none; z-index:3;"></div>
+		<!-- Marble tray with succulents — top-left corner (same decoration as home page category-one) -->
+		<img src="assets/images/single-plant-pots/marble-tray-with-succulent-plants-on-white-backgro-TKXAJWM-800x566.png" alt="" style="position:absolute; left:30px; top:30px; width:320px; height:auto; z-index:5; pointer-events:none;" />
 		<div class="auto-container">
 			<div class="sec-title centered">
 				<div class="sec-title_title">Categories</div>
@@ -430,66 +576,47 @@
 			</div>
 			<div class="row clearfix">
 
-				<!-- Founder Image Frame -->
-				<div class="col-lg-5 col-md-12 col-sm-12">
-					<div class="services-founder_wrap wow fadeInLeft" data-wow-duration="1500ms" style="position:relative; height:100%; min-height:520px;">
-						<div class="services-founder_image" style="position:relative; height:100%; min-height:520px; border-radius:8px; background-image:url(assets/images/resource/services-founder.jpg); background-size:cover; background-position:center; box-shadow:0 10px 40px rgba(0,0,0,0.12); z-index:1;"></div>
-						<img class="services-founder_deco" src="assets/images/icons/deco-hanging.png" alt="" style="top:-60px; right:-40px; width:120px; height:auto;" />
-						<img class="services-founder_deco" src="assets/images/icons/deco-ivy.png" alt="" style="top:-30px; left:-50px; width:100px; height:auto;" />
-						<img class="services-founder_deco" src="assets/images/icons/deco-monstera.png" alt="" style="bottom:-40px; left:-60px; width:160px; height:auto;" />
-						<img class="services-founder_deco" src="assets/images/icons/deco-flower.png" alt="" style="bottom:-30px; right:-40px; width:130px; height:auto;" />
-						<img class="services-founder_deco" src="assets/images/icons/deco-calathea.png" alt="" style="bottom:30%; right:-50px; width:110px; height:auto; z-index:0; opacity:0.85;" />
+				<!-- Category Block One -->
+				<div class="category-block_one col-lg-3 col-md-6 col-sm-12">
+					<div class="category-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="category-block_one-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
+						<h4 class="category-block_one-title"><a href="#" data-disabled-href="/service-detail">Defensible Space</a></h4>
+						<div class="category-block_one-icon" style="background:transparent;"><img src="assets/images/Icon-glyph/23.png" alt="" style="width:60px; height:60px; display:block; margin:8px auto; object-fit:contain;" /></div>
+						<div class="category-block_one-text">Fire-wise zone planning around your home and outbuildings</div>
+						<a class="category-block_one-arrow flaticon-right-arrow" href="#" data-disabled-href="/service-detail" aria-label="Learn more about Defensible Space"></a>
 					</div>
 				</div>
 
-				<!-- 2x2 Cards Column -->
-				<div class="col-lg-7 col-md-12 col-sm-12">
-					<div class="row clearfix">
+				<!-- Category Block One -->
+				<div class="category-block_one col-lg-3 col-md-6 col-sm-12">
+					<div class="category-block_one-inner wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
+						<div class="category-block_one-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
+						<h4 class="category-block_one-title"><a href="#" data-disabled-href="/service-detail">Stream Restoration</a></h4>
+						<div class="category-block_one-icon" style="background:transparent;"><img src="assets/images/Icon-glyph/22.png" alt="" style="width:60px; height:60px; display:block; margin:8px auto; object-fit:contain;" /></div>
+						<div class="category-block_one-text">Bank stabilization, riparian planting, sediment management</div>
+						<a class="category-block_one-arrow flaticon-right-arrow" href="#" data-disabled-href="/service-detail" aria-label="Learn more about Stream Restoration"></a>
+					</div>
+				</div>
 
-						<!-- Category Block One -->
-						<div class="category-block_one col-lg-6 col-md-6 col-sm-12">
-							<div class="category-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="category-block_one-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
-								<h4 class="category-block_one-title"><a href="#" data-disabled-href="service-detail.html">Defensible Space</a></h4>
-								<div class="category-block_one-icon" style="background-color:transparent; font-family:inherit;"><img src="assets/images/icons/service-defensible.png" alt="" style="width:100%; height:100%; object-fit:contain;" /></div>
-								<div class="category-block_one-text">Quote-based stewardship work for your property.</div>
-								<a class="category-block_one-arrow flaticon-right-arrow" href="#" data-disabled-href="service-detail.html"></a>
-							</div>
-						</div>
+				<!-- Category Block One -->
+				<div class="category-block_one col-lg-3 col-md-6 col-sm-12">
+					<div class="category-block_one-inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="category-block_one-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
+						<h4 class="category-block_one-title"><a href="#" data-disabled-href="/service-detail">Biochar</a></h4>
+						<div class="category-block_one-icon" style="background:transparent;"><img src="assets/images/Icon-glyph/21.png" alt="" style="width:60px; height:60px; display:block; margin:8px auto; object-fit:contain;" /></div>
+						<div class="category-block_one-text">On-site biochar production for soil and carbon</div>
+						<a class="category-block_one-arrow flaticon-right-arrow" href="#" data-disabled-href="/service-detail" aria-label="Learn more about Biochar"></a>
+					</div>
+				</div>
 
-						<!-- Category Block One -->
-						<div class="category-block_one col-lg-6 col-md-6 col-sm-12">
-							<div class="category-block_one-inner wow fadeInRight" data-wow-delay="150ms" data-wow-duration="1500ms">
-								<div class="category-block_one-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
-								<h4 class="category-block_one-title"><a href="#" data-disabled-href="service-detail.html">Stream Restoration</a></h4>
-								<div class="category-block_one-icon" style="background-color:transparent; font-family:inherit;"><img src="assets/images/icons/service-stream.png" alt="" style="width:100%; height:100%; object-fit:contain;" /></div>
-								<div class="category-block_one-text">Quote-based stewardship work for your property.</div>
-								<a class="category-block_one-arrow flaticon-right-arrow" href="#" data-disabled-href="service-detail.html"></a>
-							</div>
-						</div>
-
-						<!-- Category Block One -->
-						<div class="category-block_one col-lg-6 col-md-6 col-sm-12">
-							<div class="category-block_one-inner wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-								<div class="category-block_one-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
-								<h4 class="category-block_one-title"><a href="#" data-disabled-href="service-detail.html">Biochar Production</a></h4>
-								<div class="category-block_one-icon" style="background-color:transparent; font-family:inherit;"><img src="assets/images/icons/service-biochar.png" alt="" style="width:100%; height:100%; object-fit:contain;" /></div>
-								<div class="category-block_one-text">Quote-based stewardship work for your property.</div>
-								<a class="category-block_one-arrow flaticon-right-arrow" href="#" data-disabled-href="service-detail.html"></a>
-							</div>
-						</div>
-
-						<!-- Category Block One -->
-						<div class="category-block_one col-lg-6 col-md-6 col-sm-12">
-							<div class="category-block_one-inner wow fadeInRight" data-wow-delay="450ms" data-wow-duration="1500ms">
-								<div class="category-block_one-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
-								<h4 class="category-block_one-title"><a href="#" data-disabled-href="service-detail.html">Bilingual Trainings</a></h4>
-								<div class="category-block_one-icon" style="background-color:transparent; font-family:inherit;"><img src="assets/images/icons/service-bilingual.png" alt="" style="width:100%; height:100%; object-fit:contain;" /></div>
-								<div class="category-block_one-text">Quote-based stewardship work for your property.</div>
-								<a class="category-block_one-arrow flaticon-right-arrow" href="#" data-disabled-href="service-detail.html"></a>
-							</div>
-						</div>
-
+				<!-- Category Block One -->
+				<div class="category-block_one col-lg-3 col-md-6 col-sm-12">
+					<div class="category-block_one-inner wow fadeInLeft" data-wow-delay="450ms" data-wow-duration="1500ms">
+						<div class="category-block_one-pattern" style="background-image:url(assets/images/background/pattern-2.png)"></div>
+						<h4 class="category-block_one-title"><a href="#" data-disabled-href="/service-detail">Bilingual Trainings</a></h4>
+						<div class="category-block_one-icon flaticon-language"></div>
+						<div class="category-block_one-text">English and Spanish workshops for crews and landowners</div>
+						<a class="category-block_one-arrow flaticon-right-arrow" href="#" data-disabled-href="/service-detail" aria-label="Learn more about Bilingual Trainings"></a>
 					</div>
 				</div>
 
@@ -499,158 +626,98 @@
 	<!-- End Category One -->
 	
 	<!-- Services One -->
-	<section class="services-five" style="position:relative; overflow:hidden;">
-		<div class="services-five_image" style="background-image:url(assets/images/background/pattern-7.jpg)"></div>
-		<img class="services-five_deco" src="assets/images/icons/deco-hanging.png" alt="" style="position:absolute; top:-30px; right:30px; width:120px; height:auto; z-index:1; pointer-events:none;" />
-		<img class="services-five_deco" src="assets/images/icons/deco-hanging.png" alt="" style="position:absolute; top:-30px; left:30px; width:120px; height:auto; z-index:1; pointer-events:none;" />
-		<img class="services-five_deco" src="assets/images/icons/deco-areca.png" alt="" style="position:absolute; bottom:-30px; left:20px; width:200px; height:auto; z-index:1; pointer-events:none;" />
-		<img class="services-five_deco" src="assets/images/icons/deco-monstera.png" alt="" style="position:absolute; bottom:-20px; right:30px; width:180px; height:auto; z-index:1; pointer-events:none;" />
-		<div class="auto-container">
-			<div class="sec-title centered">
-				<div class="sec-title_title">Our Services</div>
-				<h2 class="sec-title_heading">The Services We Offer To <br> Our Clients</h2>
-			</div>
-			<div class="row clearfix">
+	<section class="services-five" style="position:relative; overflow:hidden; padding: 0;">
+		<style>
+			/* 21:9 cinematic on desktop becomes a tiny strip on phones — switch to 4:3 below 768px so the banner has presence. */
+			@media (max-width: 767px) {
+				.services-five_feature { aspect-ratio: 4 / 3 !important; }
+			}
+			@media (max-width: 480px) {
+				.services-five_feature { aspect-ratio: 3 / 2 !important; }
+			}
+		</style>
 
-				<!-- Photo Service Card -->
-				<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:30px;">
-					<div class="svc-photo-card wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms" style="position:relative; height:100%; background-color:var(--white-color); border-radius:8px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.08); transition:all 400ms ease;">
-						<div style="position:absolute; bottom:0; right:0; width:60px; height:56px; background-image:url(assets/images/background/pattern-4.png); background-size:contain; background-repeat:no-repeat; background-position:bottom right; transform:scaleY(-1); opacity:0.55; z-index:1; pointer-events:none;"></div>
-						<div style="height:230px; background-image:url(assets/images/resource/svc-stream.jpg); background-size:cover; background-position:center;"></div>
-						<div style="position:relative; z-index:2; padding:28px 26px;">
-							<h4 style="font-size:21px; font-weight:700; margin-bottom:10px; color:var(--color-four);"><a href="#" data-disabled-href="service-detail.html" style="color:inherit;">Stream Restoration</a></h4>
-							<p style="font-size:14px; line-height:1.6; color:#5a6258; margin:0;">Bank stabilization, riparian native planting, and watershed work — like our Canticle Creek case study.</p>
-						</div>
-					</div>
+		<!-- Feature image: full-width cinematic shot of restoration work -->
+		<div class="services-five_feature wow fadeInUp" data-wow-duration="1500ms" style="position:relative; width:100%; overflow:hidden; box-shadow:0 18px 50px rgba(20, 50, 42, 0.18); aspect-ratio: 21 / 9;">
+			<img src="assets/images/portfolio/canticle-creek/creek-after-2.jpg" alt="Restored creek habitat — Ecotones Land Stewardship project" style="width:100%; height:100%; object-fit:cover; display:block;" />
+			<div style="position:absolute; inset:0; background:linear-gradient(180deg, transparent 50%, rgba(20, 50, 42, 0.45) 100%); pointer-events:none;"></div>
+			<div style="position:absolute; left:clamp(32px, 6vw, 90px); bottom:clamp(28px, 4vw, 60px); right:clamp(32px, 6vw, 90px); color:#fff; z-index:2;">
+				<div style="display:inline-flex; align-items:center; gap:10px; font-size:11px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#c8a96a; margin-bottom:8px;">
+					<span style="width:24px; height:1px; background-color:#c8a96a; display:inline-block;"></span>
+					Featured Project
 				</div>
-
-				<!-- Photo Service Card -->
-				<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:30px;">
-					<div class="svc-photo-card wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms" style="position:relative; height:100%; background-color:var(--white-color); border-radius:8px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.08); transition:all 400ms ease;">
-						<div style="position:absolute; bottom:0; right:0; width:60px; height:56px; background-image:url(assets/images/background/pattern-4.png); background-size:contain; background-repeat:no-repeat; background-position:bottom right; transform:scaleY(-1); opacity:0.55; z-index:1; pointer-events:none;"></div>
-						<div style="height:230px; background-image:url(assets/images/resource/svc-defensible.jpg); background-size:cover; background-position:center;"></div>
-						<div style="position:relative; z-index:2; padding:28px 26px;">
-							<h4 style="font-size:21px; font-weight:700; margin-bottom:10px; color:var(--color-four);"><a href="#" data-disabled-href="service-detail.html" style="color:inherit;">Defensible Space</a></h4>
-							<p style="font-size:14px; line-height:1.6; color:#5a6258; margin:0;">Fire-wise zone planning around homes and outbuildings — fire-resilient native plantings included.</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Photo Service Card -->
-				<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:30px;">
-					<div class="svc-photo-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="position:relative; height:100%; background-color:var(--white-color); border-radius:8px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.08); transition:all 400ms ease;">
-						<div style="position:absolute; bottom:0; right:0; width:60px; height:56px; background-image:url(assets/images/background/pattern-4.png); background-size:contain; background-repeat:no-repeat; background-position:bottom right; transform:scaleY(-1); opacity:0.55; z-index:1; pointer-events:none;"></div>
-						<div style="height:230px; background-image:url(assets/images/resource/svc-biochar.jpg); background-size:cover; background-position:center;"></div>
-						<div style="position:relative; z-index:2; padding:28px 26px;">
-							<h4 style="font-size:21px; font-weight:700; margin-bottom:10px; color:var(--color-four);"><a href="#" data-disabled-href="service-detail.html" style="color:inherit;">Biochar Production</a></h4>
-							<p style="font-size:14px; line-height:1.6; color:#5a6258; margin:0;">On-site biochar from forest biomass — locking carbon back into the ground as soil amendment.</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Photo Service Card -->
-				<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:30px;">
-					<div class="svc-photo-card wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms" style="position:relative; height:100%; background-color:var(--white-color); border-radius:8px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.08); transition:all 400ms ease;">
-						<div style="position:absolute; bottom:0; right:0; width:60px; height:56px; background-image:url(assets/images/background/pattern-4.png); background-size:contain; background-repeat:no-repeat; background-position:bottom right; transform:scaleY(-1); opacity:0.55; z-index:1; pointer-events:none;"></div>
-						<div style="height:230px; background-image:url(assets/images/resource/svc-bilingual.jpg); background-size:cover; background-position:center;"></div>
-						<div style="position:relative; z-index:2; padding:28px 26px;">
-							<h4 style="font-size:21px; font-weight:700; margin-bottom:10px; color:var(--color-four);"><a href="#" data-disabled-href="service-detail.html" style="color:inherit;">Bilingual Trainings</a></h4>
-							<p style="font-size:14px; line-height:1.6; color:#5a6258; margin:0;">Workshops in English &amp; Spanish for crews, landowners, and partner organizations — meeting people where they steward.</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Photo Service Card -->
-				<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:30px;">
-					<div class="svc-photo-card wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms" style="position:relative; height:100%; background-color:var(--white-color); border-radius:8px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.08); transition:all 400ms ease;">
-						<div style="position:absolute; bottom:0; right:0; width:60px; height:56px; background-image:url(assets/images/background/pattern-4.png); background-size:contain; background-repeat:no-repeat; background-position:bottom right; transform:scaleY(-1); opacity:0.55; z-index:1; pointer-events:none;"></div>
-						<div style="height:230px; background-image:url(assets/images/resource/svc-pond.jpg); background-size:cover; background-position:center;"></div>
-						<div style="position:relative; z-index:2; padding:28px 26px;">
-							<h4 style="font-size:21px; font-weight:700; margin-bottom:10px; color:var(--color-four);"><a href="#" data-disabled-href="service-detail.html" style="color:inherit;">Pond Construction</a></h4>
-							<p style="font-size:14px; line-height:1.6; color:#5a6258; margin:0;">Design and construction of ponds — built for habitat, water storage, and the species your land supports.</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Photo Service Card -->
-				<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom:30px;">
-					<div class="svc-photo-card wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms" style="position:relative; height:100%; background-color:var(--white-color); border-radius:8px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.08); transition:all 400ms ease;">
-						<div style="position:absolute; bottom:0; right:0; width:60px; height:56px; background-image:url(assets/images/background/pattern-4.png); background-size:contain; background-repeat:no-repeat; background-position:bottom right; transform:scaleY(-1); opacity:0.55; z-index:1; pointer-events:none;"></div>
-						<div style="height:230px; background-image:url(assets/images/resource/svc-fuels.jpg); background-size:cover; background-position:center;"></div>
-						<div style="position:relative; z-index:2; padding:28px 26px;">
-							<h4 style="font-size:21px; font-weight:700; margin-bottom:10px; color:var(--color-four);"><a href="#" data-disabled-href="service-detail.html" style="color:inherit;">Fuels Reduction</a></h4>
-							<p style="font-size:14px; line-height:1.6; color:#5a6258; margin:0;">Brush clearance and ladder-fuel removal — reducing wildfire risk while keeping ecological structure intact.</p>
-						</div>
-					</div>
-				</div>
-
+				<h3 style="margin:0; font-size:clamp(22px, 2.6vw, 30px); font-weight:700; line-height:1.2; max-width:680px; color:#ffffff !important; text-shadow:0 2px 12px rgba(0,0,0,0.65);">Canticle Creek &mdash; Riparian Restoration</h3>
 			</div>
 		</div>
+
 	</section>
 	<!-- End Services One -->
 	
 	<!-- Welcome One -->
-	<section class="welcome-one" style="position:relative; overflow:hidden;">
-		<img class="welcome-one_deco" src="assets/images/icons/deco-corn.png" alt="" style="position:absolute; bottom:-30px; left:20px; width:170px; height:auto; z-index:1; pointer-events:none; filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
-		<img class="welcome-one_deco" src="assets/images/icons/deco-yucca.png" alt="" style="position:absolute; bottom:-30px; right:20px; width:170px; height:auto; z-index:1; pointer-events:none; filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
+	<!-- Rooted In Northern California — mirrors the .about-one pattern (image LEFT with stacked photos + counter, content RIGHT with sec-title + feature blocks + body + check). All existing classes, no orphan styling. -->
+	<section class="about-one service-area" style="overflow:visible;">
+		<div style="position:absolute; left:0; top:0; right:0; bottom:0; background-image:url(assets/images/background/pattern-7.jpg); background-size:cover;"></div>
+		<div class="about-one-icon_one" style="background-image:url(assets/images/icons/icon-41.png)"></div>
+		<div class="about-one-icon_two" style="background-image:url(assets/images/icons/icon-42.png)"></div>
+		<div class="about-one-icon_five" style="background-image:url(assets/images/single-plant-pots/11.png); background-size:contain; background-repeat:no-repeat; width:260px; height:260px; bottom:-40px; z-index:50;"></div>
 		<div class="auto-container">
 			<div class="row clearfix">
-				<!-- Founder Image Column -->
-				<div class="welcome-one_founder-col col-lg-4 col-md-12 col-sm-12">
-					<div class="welcome-one_founder wow fadeInLeft" data-wow-duration="1500ms" style="position:relative; height:100%; min-height:480px; border-radius:8px; background-image:url(assets/images/resource/welcome-founder.jpg); background-size:cover; background-position:center top; box-shadow:0 10px 40px rgba(0,0,0,0.12);">
+				<!-- Image Column -->
+				<div class="about-one_image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="about-one_image-inner">
+						<div class="about-one-icon_three" style="background-image:url(assets/images/icons/icon-43.png)"></div>
+						<div class="about-one-icon_four" style="background-image:url(assets/images/icons/icon-44.png)"></div>
+						<div class="about-one_image">
+							<img src="assets/images/resource/welcome-founder.jpg" alt="Robert Symens-Bucher in the field &mdash; Ecotones Land Stewardship founder" />
+						</div>
+						<div class="about-one_image-two">
+							<img src="assets/images/portfolio/canticle-creek/creek-after-2.jpg" alt="Restored Canticle Creek &mdash; Northern California" />
+						</div>
+						<div class="about-one_counter" style="background-image:url(assets/images/icons/icon-46.png)">
+							<span>60+</span> Satisfied Customers
+						</div>
 					</div>
 				</div>
-				<!-- Title Column -->
-				<div class="welcome-one_title-column col-lg-4 col-md-12 col-sm-12">
-					<div class="welcome-one_title-inner">
+				<!-- Content Column -->
+				<div class="about-one_content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="about-one_content">
 						<div class="sec-title">
-							<h2 class="sec-title_heading">Rooted In <br> Northern California</h2>
-							<div class="sec-title_text">We're based in Oakland and work across Northern California — from coastal watersheds to inland forests. Every property is different, but the approach is the same: scope honestly, work at the pace of the land, and come back to make sure the work took.</div>
+							<div class="sec-title_title">Service Area</div>
+							<h2 class="sec-title_heading">Stewardship Across <br> Northern California</h2>
+							<div class="sec-title_text">From coastal watersheds to inland forests, we serve landowners, agencies, and partner organizations across Northern California &mdash; every site assessed first, every plan scoped to the land it serves, and every crew day followed up to verify what took.</div>
 						</div>
-						<div class="welcome-one_feature" style="padding-right:0;">
-							<h5 class="welcome-one_subtitle">We Steward Land Across Northern California</h5>
-							<div class="welcome-one_text">Defensible space, biochar, ponds, stream <br> restoration, and bilingual EN/ES trainings.</div>
-							<div class="welcome-one_feature-button" style="position:static; margin-top:25px;">
-								<a href="shop.html" class="theme-btn btn-style-eight">
-									<span class="btn-wrap">
-										<span class="text-one">Shop Native Plants</span>
-										<span class="text-two">Shop Native Plants</span>
-									</span>
-								</a>
+
+						<!-- Feature Block Seven -->
+						<div class="feature-block_seven">
+							<div class="feature-block_seven-inner">
+								<div class="feature-block_seven-icon flaticon-care"></div>
+								<h4 class="feature-block_seven-title">Coastal to Inland</h4>
+								From the Pacific to the Sierra foothills &mdash; every watershed type
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- Counter Column -->
-				<div class="welcome-one_counter-column col-lg-4 col-md-12 col-sm-12">
-					<div class="welcome-one_counter-inner">
-						<div class="row clearfix">
+						<!-- End Feature Block One -->
 
-							<!-- Counter Block One -->
-							<div class="counter-block_one col-lg-12 col-md-6 col-sm-12">
-								<div class="counter-block_one-inner">
-									<div class="counter-block_one-counter"><span class="odometer" data-count="100"></span>%</div>
-									<h4>Native Plant Nursery</h4>
-									<p>California-sourced, propagated on-site</p>
-								</div>
+						<!-- Feature Block Seven -->
+						<div class="feature-block_seven">
+							<div class="feature-block_seven-inner">
+								<div class="feature-block_seven-icon flaticon-language"></div>
+								<h4 class="feature-block_seven-title">Bilingual EN/ES Crews</h4>
+								Hands-on stewardship in English and Spanish
 							</div>
-
-							<!-- Counter Block One -->
-							<div class="counter-block_one col-lg-12 col-md-6 col-sm-12">
-								<div class="counter-block_one-inner">
-									<div class="counter-block_one-counter"><span class="odometer" data-count="60"></span>+</div>
-									<h4>Satisfied Customers</h4>
-									<p>Landowners, partners, and crews served</p>
-								</div>
-							</div>
-
 						</div>
+						<!-- End Feature Block One -->
+
+						<div class="about-one_text">Service area covers Bay Area, Sonoma, Marin, and the inland foothills &mdash; defensible space, biochar, ponds, stream restoration, and bilingual EN/ES trainings.</div>
+
+						<!-- Check -->
+						<div class="about-one_check" style="visibility:hidden;"><i><img src="assets/images/icons/icon-47.png" alt="" /></i> Native plant nursery &middot; biochar &middot; defensible space &middot; ponds &amp; stream restoration &middot; bilingual trainings</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- End Welcome One -->
+	<!-- End Rooted In Northern California -->
 	<!-- Services Four -->
 	<section class="services-four" style="position:relative; overflow:visible;">
 		<img class="services-four_deco" src="assets/images/icons/icon-53.png" alt="" style="position:absolute; top:60px; left:450px; width:160px; height:auto; z-index:1; pointer-events:none; animation: float_up_down 5s linear infinite; -webkit-animation: float_up_down 5s linear infinite;" />
@@ -676,11 +743,11 @@
 						<div class="services-block_four-icon" style="background-color:#fff;">
 							<img src="assets/images/Icon-glyph/21.png" alt="" style="width:50px; height:50px; object-fit:contain; vertical-align:middle;" />
 						</div>
-						<h4 class="services-block_four-title"><a href="#" data-disabled-href="service-detail.html">Biochar Production</a></h4>
+						<h4 class="services-block_four-title"><a href="#" data-disabled-href="/service-detail">Biochar Production</a></h4>
 						<div class="services-block_four-text">On-site biochar from forest biomass — soil amendment that locks in carbon</div>
 						<div class="services-block_four-image">
 							<img src="assets/images/resource/service-1.jpg" alt="Forest biomass and restored corridor — biochar source feedstock" />
-							<a class="services-block_four-arrow flaticon-right-down" href="#" data-disabled-href="service-detail.html"></a>
+							<a class="services-block_four-arrow flaticon-right-down" href="#" data-disabled-href="/service-detail"></a>
 						</div>
 					</div>
 				</div>
@@ -694,11 +761,11 @@
 						<div class="services-block_four-icon" style="background-color:#fff;">
 							<img src="assets/images/Icon-glyph/23.png" alt="" style="width:50px; height:50px; object-fit:contain; vertical-align:middle;" />
 						</div>
-						<h4 class="services-block_four-title"><a href="#" data-disabled-href="service-detail.html">Defensible Space</a></h4>
+						<h4 class="services-block_four-title"><a href="#" data-disabled-href="/service-detail">Defensible Space</a></h4>
 						<div class="services-block_four-text">Fire-wise zone planning, fuels reduction, and brush clearance</div>
 						<div class="services-block_four-image">
-							<img src="assets/images/resource/service-2.jpg" alt="Water-and-vegetation buffer zone — fire-wise riparian edge" />
-							<a class="services-block_four-arrow flaticon-right-down" href="#" data-disabled-href="service-detail.html"></a>
+							<img src="assets/images/portfolio/burning/burn-1.jpg" alt="Prescribed pile burn for fuels reduction and defensible space" />
+							<a class="services-block_four-arrow flaticon-right-down" href="#" data-disabled-href="/service-detail"></a>
 						</div>
 					</div>
 				</div>
@@ -712,11 +779,11 @@
 						<div class="services-block_four-icon" style="background-color:#fff;">
 							<img src="assets/images/Icon-glyph/22.png" alt="" style="width:50px; height:50px; object-fit:contain; vertical-align:middle;" />
 						</div>
-						<h4 class="services-block_four-title"><a href="#" data-disabled-href="service-detail.html">Stream Restoration</a></h4>
+						<h4 class="services-block_four-title"><a href="#" data-disabled-href="/service-detail">Stream Restoration</a></h4>
 						<div class="services-block_four-text">Bank stabilization, riparian planting, ponds, and watershed work</div>
 						<div class="services-block_four-image">
-							<img src="assets/images/resource/service-3.jpg" alt="Native sedges and stones along a restored creek channel" />
-							<a class="services-block_four-arrow flaticon-right-down" href="#" data-disabled-href="service-detail.html"></a>
+							<img src="assets/images/portfolio/canticle-creek/creek-after-2.jpg" alt="Restored creek channel with native plantings" />
+							<a class="services-block_four-arrow flaticon-right-down" href="#" data-disabled-href="/service-detail"></a>
 						</div>
 					</div>
 				</div>
@@ -728,11 +795,11 @@
 							<div class="services-block_four-pattern" style="background-image:url(assets/images/background/pattern-16.png)"></div>
 						</div>
 						<div class="services-block_four-icon" style="background-color:#fff; color:#2D4A22; font-size:16px; font-weight:700;">EN/ES</div>
-						<h4 class="services-block_four-title"><a href="#" data-disabled-href="service-detail.html">Bilingual Trainings</a></h4>
+						<h4 class="services-block_four-title"><a href="#" data-disabled-href="/service-detail">Bilingual Trainings</a></h4>
 						<div class="services-block_four-text">English &amp; Spanish workshops for crews and landowners</div>
 						<div class="services-block_four-image">
-							<img src="assets/images/resource/service-4.jpg" alt="Alocasia leaves — native plant identification, training reference" />
-							<a class="services-block_four-arrow flaticon-right-down" href="#" data-disabled-href="service-detail.html"></a>
+							<img src="assets/images/portfolio/training/training-3.jpg" alt="Bilingual resilient landscaping field training" />
+							<a class="services-block_four-arrow flaticon-right-down" href="#" data-disabled-href="/service-detail"></a>
 						</div>
 					</div>
 				</div>
@@ -742,22 +809,247 @@
 	</section>
 	<!-- End Services Four -->
 
+	<!-- Prescribed Burning — mirrors the .fluid-one pattern (image LEFT with play-button overlay to burn-timelapse video / content RIGHT). All existing classes. -->
+	<section class="fluid-one">
+		<div class="outer-container clearfix">
+			<div class="fluid-one_icon-two">
+				<img src="assets/images/icons/icon-18.png" alt="" />
+			</div>
+			<!-- Left Box -->
+			<div class="left-box" style="background-image: url(assets/images/portfolio/burning/burn-timelapse-poster.jpg)">
+				<a href="assets/images/portfolio/burning/burn-timelapse.mp4" class="lightbox-video fluid-one_play" aria-label="Play prescribed burn timelapse"><span class="fa-solid fa-play fa-fw"><i class="ripple"></i></span></a>
+				<div class="fluid-one_image">
+					<img src="assets/images/portfolio/burning/burn-timelapse-poster.jpg" alt="Prescribed pile burn &mdash; timelapse" />
+				</div>
+				<div class="fluid-one_icon">
+					<img src="assets/images/icons/icon-17.png" alt="" />
+				</div>
+			</div>
+			<!-- Right Box -->
+			<div class="right-box">
+				<div class="right-box_inner">
+					<div class="sec-title">
+						<div class="sec-title_title">In The Field</div>
+						<h2 class="sec-title_heading">Prescribed Burning &mdash; <br> Fuels &amp; Defensible Space</h2>
+						<div class="sec-title_text">Pile burns and prescribed fire planning &mdash; sized for the property, scheduled around weather and crew safety, and followed up to verify the fuel load came down without taking the canopy with it.</div>
+					</div>
+					<div class="row clearfix">
+						<div class="column col-lg-6 col-md-6 col-sm-6">
+							<!-- Feature Block Two -->
+							<div class="feature-block_two">
+								<div class="feature-block_two-inner">
+									<div class="feature-block_two-content">
+										<div class="feature-block_two-icon" style="font-size:22px; line-height:80px;">PILE</div>
+										<strong>Controlled Pile Burns</strong>
+										Sized for the property and the weather window
+									</div>
+								</div>
+							</div>
+
+							<!-- Feature Block Two -->
+							<div class="feature-block_two alternate">
+								<div class="feature-block_two-inner">
+									<div class="feature-block_two-content">
+										<div class="feature-block_two-icon" style="font-size:22px; line-height:80px;">FUEL</div>
+										<strong>Fuels Reduction</strong>
+										Defensible space around homes and outbuildings
+									</div>
+								</div>
+							</div>
+
+							<!-- Feature Block Two — third block keeps the left column at-or-above the right column's height after the Burned Right caption was moved over there -->
+							<div class="feature-block_two">
+								<div class="feature-block_two-inner">
+									<div class="feature-block_two-content">
+										<div class="feature-block_two-icon" style="font-size:22px; line-height:80px;">CHECK</div>
+										<strong>Returned After</strong>
+										Walked the property the next season to verify what took
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="column col-lg-6 col-md-6 col-sm-6">
+							<div class="fluid-one_content burning_caption" style="padding-left:25px; margin-bottom:24px;">
+								<h5>Burned Right, Verified After</h5>
+								<p>A burn isn't done when the smoke clears &mdash; it's done when we walk the property the next season and confirm the canopy held, the regrowth is what we wanted, and the fuel load stayed down.</p>
+							</div>
+
+							<div class="fluid-one_image-two">
+								<img src="assets/images/portfolio/burning/burn-2.jpg" alt="Prescribed pile burn &mdash; crew on-site" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Prescribed Burning -->
+
+	<!-- Invasive Removal — mirrors the .modern-one pattern (content LEFT / image RIGHT — keeps the bleed-right margin off-page so text never overlaps). All existing classes. -->
+	<section class="modern-one">
+		<div class="modern-one_pattern" style="background-image:url(assets/images/background/pattern-3.png)"></div>
+		<div class="modern-one_icon">
+			<img src="assets/images/icons/icon-3.png" alt="" />
+		</div>
+		<div class="modern-one_icon-two">
+			<img src="assets/images/icons/deco-monstera.png" alt="" style="filter: drop-shadow(0 22px 6px rgba(0,0,0,0.28));" />
+		</div>
+
+		<div class="auto-container">
+			<div class="row clearfix">
+
+				<!-- Content Column (LEFT) -->
+				<div class="modern-one_content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="modern-one_content">
+						<div class="sec-title">
+							<div class="sec-title_title">In The Field</div>
+							<h2 class="sec-title_heading">Invasive Removal &mdash; <br> Broom Pulling</h2>
+							<div class="sec-title_text">Hand-pulling and crew workdays focused on Scotch broom and other invasives that crowd out California natives. Done right, the soil structure stays intact and the natives have room to come back.</div>
+						</div>
+
+						<!-- Feature Block One -->
+						<div class="feature-block_one alternate">
+							<div class="feature-block_one-inner">
+								<div class="feature-block_one-icon flaticon-natural"></div>
+								<h4 class="feature-block_one-title">Hand-Pulling Crews</h4>
+								Roots out, soil intact &mdash; not a chemical shortcut.
+							</div>
+						</div>
+						<!-- End Feature Block One -->
+
+						<!-- Check -->
+						<div class="modern-one_check"><i><img src="assets/images/icons/check.png" alt="" /></i> Returned each season to verify the natives reclaimed the cleared ground.</div>
+
+						<!-- Feature Block One -->
+						<div class="feature-block_one">
+							<div class="feature-block_one-inner">
+								<div class="feature-block_one-icon flaticon-organic"></div>
+								<h4 class="feature-block_one-title">Native Recovery</h4>
+								Cleared ground replanted with California natives propagated in our nursery.
+							</div>
+						</div>
+						<!-- End Feature Block One -->
+
+						<div class="modern-one_button">
+							<a href="/contact" class="theme-btn btn-style-five">
+								<span class="btn-wrap">
+									<span class="text-one">Request a Quote</span>
+									<span class="text-two">Request a Quote</span>
+								</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Image Column (RIGHT) -->
+				<div class="modern-one_image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="modern-one_image">
+						<img src="assets/images/portfolio/broom-pulling/pulling-1-poster.jpg" alt="Crew pulling invasive Scotch broom" />
+					</div>
+					<div class="modern-one_image-two">
+						<img src="assets/images/portfolio/broom-pulling/pulling-2-poster.jpg" alt="Broom pulling crew &mdash; hand removal in progress" />
+					</div>
+					<div class="modern-one_icon-three">
+						<img src="assets/images/icons/icon-5.png" alt="" />
+					</div>
+					<div class="modern-one_circle" style="background-image:url(assets/images/icons/icon-6.png)"></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Invasive Removal -->
+
+	<!-- Bilingual Trainings — mirrors the .about-one pattern (image LEFT with stacked photos + counter / content RIGHT). All existing classes. -->
+	<section class="about-one" style="overflow:visible; padding:80px 0 140px;">
+		<div style="position:absolute; left:0; top:0; right:0; bottom:0; background-image:url(assets/images/background/pattern-7.jpg); background-size:cover;"></div>
+		<div class="about-one-icon_one" style="background-image:url(assets/images/icons/icon-41.png)"></div>
+		<div class="about-one-icon_two" style="background-image:url(assets/images/icons/icon-42.png)"></div>
+		<div class="about-one-icon_five" style="background-image:url(assets/images/single-plant-pots/11.png); background-size:contain; background-repeat:no-repeat; width:260px; height:260px; bottom:-40px; z-index:50;"></div>
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Image Column -->
+				<div class="about-one_image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="about-one_image-inner">
+						<div class="about-one-icon_three" style="background-image:url(assets/images/icons/icon-43.png)"></div>
+						<div class="about-one-icon_four" style="background-image:url(assets/images/icons/icon-44.png)"></div>
+						<div class="about-one_image">
+							<img src="assets/images/portfolio/training/training-2.jpg" alt="Bilingual training crew on-site &mdash; field workshop" />
+						</div>
+						<div class="about-one_image-two">
+							<img src="assets/images/portfolio/training/training-7.jpg" alt="Bilingual training &mdash; hands-on instruction" />
+						</div>
+						<div class="about-one_counter" style="background-image:url(assets/images/icons/icon-46.png)">
+							<span>EN/ES</span> Hands-on, In The Field
+						</div>
+					</div>
+				</div>
+				<!-- Content Column -->
+				<div class="about-one_content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="about-one_content">
+						<div class="sec-title">
+							<div class="sec-title_title">In The Field</div>
+							<h2 class="sec-title_heading">Bilingual Trainings &mdash; <br> EN / ES In The Field</h2>
+							<div class="sec-title_text">Hands-on workshops in English and Spanish for crews, landowners, and partner organizations &mdash; biochar, defensible space, fuels reduction, riparian planting, and pond construction. We meet people where they steward the land.</div>
+						</div>
+
+						<!-- Feature Block Seven -->
+						<div class="feature-block_seven">
+							<div class="feature-block_seven-inner">
+								<div class="feature-block_seven-icon flaticon-language"></div>
+								<h4 class="feature-block_seven-title">English &amp; Spanish</h4>
+								Bilingual instruction so every crew member learns together
+							</div>
+						</div>
+						<!-- End Feature Block One -->
+
+						<!-- Feature Block Seven -->
+						<div class="feature-block_seven">
+							<div class="feature-block_seven-inner">
+								<div class="feature-block_seven-icon flaticon-care"></div>
+								<h4 class="feature-block_seven-title">Field-Based, Not Classroom</h4>
+								Taught on the land &mdash; tools in hand, real conditions
+							</div>
+						</div>
+						<!-- End Feature Block One -->
+
+						<div class="about-one_text"><em>&ldquo;The bilingual training Robert ran for our crew was exactly what we needed &mdash; hands-on, plain-spoken, and respectful of every person in the room.&rdquo;</em></div>
+
+						<!-- Check -->
+						<div class="about-one_check" style="visibility:hidden;"><i><img src="assets/images/icons/icon-47.png" alt="" /></i> Biochar &middot; defensible space &middot; fuels reduction &middot; riparian planting &middot; pond construction</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Bilingual Trainings -->
+
 	<!-- Discount One -->
-	<section class="discount-one style-two">
+	<section class="discount-one style-two" style="position:relative; overflow:visible;">
 		<div class="discount-one_color-layer"></div>
+		<!-- Pattern-9 leaf decoration in top-right corner -->
+		<img class="custodians-decor" src="assets/images/background/pattern-9.png" alt="" style="position:absolute; right:0; top:-260px; width:300px; height:auto; z-index:2; pointer-events:none;" />
 		<div class="auto-container">
 			<div class="row clearfix">
 
 				<!-- Image Column -->
 				<div class="discount-one_image-column col-lg-6 col-md-12 col-sm-12">
-					<div class="discount-one_image">
-						<img src="assets/images/resource/discount-1.jpg" alt="Bilingual Ecotones LS crew on-site at a restoration project — multilingual stewardship in the field" />
+					<div class="discount-one_image" style="position:relative;">
+						<img src="assets/images/portfolio/canticle-pond/pond-7026.jpg" alt="Canticle Pond restoration site — Northern California stewardship" />
+						<!-- Vertical video overlap on the right edge — desktop-only positioning, mobile resets via .custodians-video class -->
+						<video class="custodians-video" src="assets/images/portfolio/canticle-pond/pond-clip.mp4" poster="assets/images/portfolio/canticle-pond/pond-clip-poster.jpg" autoplay muted loop playsinline aria-label="Canticle Pond restoration clip" style="position:absolute; right:-40px; top:-280px; width:340px; height:auto; aspect-ratio:9/16; object-fit:cover; border-radius:14px; box-shadow:0 22px 50px rgba(0,0,0,0.5); z-index:5; border:6px solid #fff;"></video>
 					</div>
 				</div>
 
 				<!-- Content Column -->
 				<div class="discount-one_content-column col-lg-6 col-md-12 col-sm-12">
-					<div class="discount-one_content">
+					<div class="discount-one_content custodians-content" style="margin-top:-100px;">
+						<div class="sec-title light" style="margin-bottom:18px;">
+							<div class="sec-title_title">Stewardship</div>
+						</div>
 						<h2 class="discount-one_heading">We’re Custodians Of The Natural Landscape</h2>
 						<div class="discount-one_text">Ecotones LS doesn’t just plant — we pay attention to the whole watershed. Soil. Water. Fire. People. The places we work today should keep working long after we leave.</div>
 
@@ -778,81 +1070,54 @@
 	</section>
 	<!-- End Discount One -->
 
-	<!-- Project One -->
-	<section class="project-one style-two" style="padding-bottom: clamp(40px, 6vw, 80px);">
-		<div class="project-one_color-layer" style="bottom: clamp(140px, 18vw, 240px);"></div>
-		<div class="project-one_icon">
-			<img src="assets/images/icons/icon-9.png" alt="" />
-		</div>
-		<div class="project-one_icon-two">
-			<img src="assets/images/icons/icon-10.png" alt="" />
-		</div>
+	<!-- Completed Projects -->
+	<section class="gallery-one completed-projects" style="padding: clamp(60px, 8vw, 100px) 0; position:relative; background-image:url(assets/images/main-slider/vector-2.png); background-repeat:no-repeat; background-position:center top; background-size:contain;">
 		<div class="auto-container">
-			<div class="sec-title light light-two centered">
-				<div class="sec-title_title">completed projects</div>
+			<div class="sec-title centered">
+				<div class="sec-title_title">Completed Projects</div>
 				<h2 class="sec-title_heading">View Some Of Our Best <br> Recent Work</h2>
 			</div>
-		</div>
-		<div class="three-item_carousel swiper-container">
-			<div class="swiper-wrapper">
+			<div class="row clearfix">
 
-				<!-- Slide 1 -->
-				<div class="swiper-slide">
-					<div class="project-block_one">
-						<div class="project-block_one-inner">
-							<div class="project-block_one-image">
-								<img src="assets/images/gallery/1.jpg" alt="Canticle Creek site assessment — crew measuring grade in a freshly excavated channel" />
-								<div class="project-block_one-overlay">
-									<div class="project-block_one-content">
-										<h5 class="project-block_one-heading"><a href="#">Canticle Creek — Site Assessment</a></h5>
-										<div class="project-block_one-designation">Stream Restoration · Before</div>
-									</div>
-									<div class="project-block_one-options">
-										<a class="project-block_one-arrow" href="#"><i class="flaticon-up-right-arrow-1"></i></a>
-										<a class="project-block_one-more" href="#">Read More</a>
-									</div>
+				<!-- Card 1 -->
+				<div class="gallery-block_one col-lg-4 col-md-4 col-sm-12">
+					<div class="gallery-block_one-inner">
+						<div class="gallery-block_one-image" style="aspect-ratio: 4 / 3; overflow: hidden;">
+							<img src="assets/images/portfolio/canticle-creek/creek-before-1.jpg" alt="Canticle Creek before restoration — degraded channel and bank" style="width: 100%; height: 100%; object-fit: cover;" />
+							<div class="gallery-block_one-overlay">
+								<div class="gallery-block_one-overlay_inner">
+									<h4><a href="#">Canticle Creek &mdash; Before</a></h4>
+									<a href="assets/images/portfolio/canticle-creek/creek-before-1.jpg" class="plus flaticon-plus lightbox-image" title="Canticle Creek — Site Assessment (Before)"></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<!-- Slide 2 -->
-				<div class="swiper-slide">
-					<div class="project-block_one">
-						<div class="project-block_one-inner">
-							<div class="project-block_one-image">
-								<img src="assets/images/gallery/2.jpg" alt="Canticle Creek mid-build — crew shaping the stream channel" />
-								<div class="project-block_one-overlay">
-									<div class="project-block_one-content">
-										<h5 class="project-block_one-heading"><a href="#">Canticle Creek — Channel Build</a></h5>
-										<div class="project-block_one-designation">Stream Restoration · During</div>
-									</div>
-									<div class="project-block_one-options">
-										<a class="project-block_one-arrow" href="#"><i class="flaticon-up-right-arrow-1"></i></a>
-										<a class="project-block_one-more" href="#">Read More</a>
-									</div>
+				<!-- Card 2 -->
+				<div class="gallery-block_one col-lg-4 col-md-4 col-sm-12">
+					<div class="gallery-block_one-inner">
+						<div class="gallery-block_one-image" style="aspect-ratio: 4 / 3; overflow: hidden;">
+							<img src="assets/images/portfolio/canticle-creek/creek-1.jpg" alt="Canticle Creek mid-build — channel reshaping and grade work" style="width: 100%; height: 100%; object-fit: cover;" />
+							<div class="gallery-block_one-overlay">
+								<div class="gallery-block_one-overlay_inner">
+									<h4><a href="#">Canticle Creek &mdash; During</a></h4>
+									<a href="assets/images/portfolio/canticle-creek/creek-1.jpg" class="plus flaticon-plus lightbox-image" title="Canticle Creek — Channel Build (During)"></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<!-- Slide 3 -->
-				<div class="swiper-slide">
-					<div class="project-block_one">
-						<div class="project-block_one-inner">
-							<div class="project-block_one-image">
-								<img src="assets/images/gallery/3.jpg" alt="Canticle Creek restored — flowing channel, native plants, recovered riparian habitat" />
-								<div class="project-block_one-overlay">
-									<div class="project-block_one-content">
-										<h5 class="project-block_one-heading"><a href="#">Canticle Creek — Restored Riparian</a></h5>
-										<div class="project-block_one-designation">Stream Restoration · After</div>
-									</div>
-									<div class="project-block_one-options">
-										<a class="project-block_one-arrow" href="#"><i class="flaticon-up-right-arrow-1"></i></a>
-										<a class="project-block_one-more" href="#">Read More</a>
-									</div>
+				<!-- Card 3 -->
+				<div class="gallery-block_one col-lg-4 col-md-4 col-sm-12">
+					<div class="gallery-block_one-inner">
+						<div class="gallery-block_one-image" style="aspect-ratio: 4 / 3; overflow: hidden;">
+							<img src="assets/images/portfolio/canticle-creek/creek-after-1.jpg" alt="Canticle Creek restored — recovered riparian habitat after stewardship work" style="width: 100%; height: 100%; object-fit: cover;" />
+							<div class="gallery-block_one-overlay">
+								<div class="gallery-block_one-overlay_inner">
+									<h4><a href="#">Canticle Creek &mdash; After</a></h4>
+									<a href="assets/images/portfolio/canticle-creek/creek-after-1.jpg" class="plus flaticon-plus lightbox-image" title="Canticle Creek — Restored Riparian (After)"></a>
 								</div>
 							</div>
 						</div>
@@ -862,7 +1127,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- End Project One -->
+	<!-- End Completed Projects -->
 
 	<!-- Fluid Two -->
 	<section class="fluid-two">
@@ -915,6 +1180,7 @@
 
 	<!-- Testimonial Two -->
 	<section class="testimonial-two" style="overflow:visible; position:relative; z-index:2;">
+		<div style="position:absolute; left:0; top:0; right:0; bottom:0; background-image:url(assets/images/background/pattern-7.jpg); background-size:cover; z-index:0;"></div>
 		<div class="testimonial-two_icon" style="bottom:-60px; z-index:10;">
 			<img src="assets/images/icons/icon-11.png" alt="" />
 		</div>
@@ -1056,7 +1322,7 @@
 	<section class="support-one style-two">
 		<div class="team-one_bg" style="background-image:url(assets/images/background/pattern-7.jpg)"></div>
 		<div class="support-one_color-layer" style="background-color: #6ba051;"></div>
-		<div class="support-one_grass" style="background-image:url(assets/images/background/pattern-19.png)"></div>
+		<div class="support-one_grass" style="bottom:240px; height:260px; background-color:#FFAC4A; -webkit-mask-image:url(assets/images/background/pattern-19.png), url(assets/images/background/pattern-19.png); mask-image:url(assets/images/background/pattern-19.png), url(assets/images/background/pattern-19.png); -webkit-mask-position:0 bottom, -130px bottom; mask-position:0 bottom, -130px bottom; -webkit-mask-repeat:repeat-x, repeat-x; mask-repeat:repeat-x, repeat-x; -webkit-mask-size:auto 100%, auto 100%; mask-size:auto 100%, auto 100%;"></div>
 		<div style="position:absolute; left:0; right:0; bottom:160px; height:160px; background-image:url(assets/images/background/pattern-19.png); background-position: -260px bottom; background-repeat: repeat-x; opacity: 0.85; z-index: 0; pointer-events: none;"></div>
 		<div style="position:absolute; left:0; right:0; bottom:40px; height:140px; background-image:url(assets/images/background/pattern-19.png); background-position: -520px bottom; background-size: auto 90%; background-repeat: repeat-x; opacity: 0.75; z-index: 0; pointer-events: none;"></div>
 		<div class="support-one_icon">
@@ -1096,7 +1362,7 @@
 										</div>
 
 										<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-											<select name="currency" class="custom-select-box">
+											<select name="currency" class="custom-select-box" aria-label="Choose a service">
 												<option>Choose Services</option>
 												<option>Defensible Space</option>
 												<option>Stream Restoration</option>
@@ -1141,7 +1407,7 @@
 						<div class="support-one_image-outer">
 							<div class="support-one_bg-image">
 								<img src="assets/images/background/support.jpg" alt="Close-up of kentia palm fronds and terracotta pots in warm light" />
-								<div class="support-one_grass-two" style="background-image:url(assets/images/background/pattern-19.png)"></div>
+								<div class="support-one_grass-two" style="background-color:#FFAC4A; -webkit-mask:url(assets/images/background/pattern-19.png) repeat-x; mask:url(assets/images/background/pattern-19.png) repeat-x;"></div>
 							</div>
 							<div class="support-one_product">
 								<div class="support-one_product-icon">
@@ -1150,7 +1416,7 @@
 								<h2 class="support-one_title">Free Site Visit. Honest Quote. No Pressure.</h2>
 								<!-- Button Box -->
 								<div class="support-one_button">
-									<a href="contact.html" class="theme-btn btn-style-six">
+									<a href="/contact" class="theme-btn btn-style-six">
 										<span class="btn-wrap">
 											<span class="text-one">Request a Quote</span>
 											<span class="text-two">Request a Quote</span>
@@ -1168,7 +1434,7 @@
 	<!-- End Support One -->
 
 	<!-- Subscribe One -->
-	<section class="subscribe-one" style="position:relative; z-index:5;">
+	<section class="subscribe-one" style="position:relative; z-index:5; background-color:#6BA051;">
 		<div class="auto-container">
 			<div class="subscribe-one_grass" style="background-image:url(assets/images/background/pattern-13.png)"></div>
 			<div class="subscribe-one_icon">
@@ -1211,7 +1477,7 @@
 								<!-- Footer Column -->
 								<div class="footer_column col-lg-6 col-md-6 col-sm-12">
 									<div class="footer-widget footer-two_logo-widget">
-										<div class="footer-logo" style="position:relative; display:inline-block; background-color:var(--main-color); padding:0 50px 0 20px; margin-bottom:25px;"><div style="position:relative; padding:5px 0;"><a href="index.html"><img src="assets/images/Logo-200x80.png" alt="Ecotones LS" title="Ecotones Land Stewardship" width="200" height="80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));"></a></div><div style="position:absolute; left:110px; top:50%; transform:translateY(-50%); color:#fff; font-weight:700; font-size:14px; line-height:1.15; letter-spacing:1px; text-transform:uppercase;">Ecotones<br>Land Stewardship</div></div>
+										<div class="footer-logo" style="position:relative; display:inline-block; background-color:var(--main-color); padding:0 50px 0 20px; margin-bottom:25px;"><div style="position:relative; padding:5px 0;"><a href="/"><img src="assets/images/Logo-200x80.png" alt="Ecotones LS" title="Ecotones Land Stewardship" width="200" height="80" style="filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));"></a></div><div style="position:absolute; left:110px; top:50%; transform:translateY(-50%); color:#fff; font-weight:700; font-size:14px; line-height:1.15; letter-spacing:1px; text-transform:uppercase;">Ecotones<br>Land Stewardship</div></div>
 										<div class="footer-text">Native plant nursery, biochar, defensible space, ponds, stream restoration, and bilingual trainings — rooted in long-term care of California land.</div>
 										<!-- Social Box -->
 										<div class="footer_socials">
@@ -1247,11 +1513,11 @@
 									<div class="footer-widget links-widget">
 										<h5 class="footer-title">Quick Links</h5>
 										<ul class="footer-list">
-											<li><a href="shop.html">Plant Nursery</a></li>
-											<li><a href="services.html">Services</a></li>
-											<li><a href="services.html">Trainings</a></li>
-											<li><a href="about.html">About</a></li>
-											<li><a href="contact.html">Request a Quote</a></li>
+											<li><a href="/shop">Plant Nursery</a></li>
+											<li><a href="/services">Services</a></li>
+											<li><a href="/services">Trainings</a></li>
+											<li><a href="/about">About</a></li>
+											<li><a href="/contact">Request a Quote</a></li>
 										</ul>
 										
 									</div>
@@ -1290,7 +1556,7 @@
 			</div>
 			<div class="footer-bottom">
 				<div class="main-footer_copyright">© 2026 Ecotones Land Stewardship<br><span class="copyright-owner">Robert Symens-Bucher, Founder &amp; Owner</span></div>
-				<div class="footer-legal" style="text-align:center; padding:0 0 30px; font-size:14px;"><a href="privacy-policy.html" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Privacy Policy</a><span style="color:#2D4A22;">·</span><a href="terms-of-service.html" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Terms of Service</a><span style="color:#2D4A22;">·</span><a href="cookie-policy.html" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Cookie Policy</a><span style="color:#2D4A22;">·</span><a href="accessibility.html" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Accessibility</a><span style="color:#2D4A22;">·</span><a href="https://www.stynerdev.com/" target="_blank" rel="noopener" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Site by StynerDev</a></div>
+				<div class="footer-legal" style="text-align:center; padding:0 0 30px; font-size:14px;"><a href="/privacy-policy" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Privacy Policy</a><span style="color:#2D4A22;">·</span><a href="/terms-of-service" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Terms of Service</a><span style="color:#2D4A22;">·</span><a href="/cookie-policy" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Cookie Policy</a><span style="color:#2D4A22;">·</span><a href="/accessibility" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Accessibility</a><span style="color:#2D4A22;">·</span><a href="https://www.stynerdev.com/" target="_blank" rel="noopener" style="color:#2D4A22; margin:0 12px; text-decoration:underline;">Site by StynerDev</a></div>
 			</div>
 		</div>
 	</footer>

@@ -1651,3 +1651,407 @@
 		background-attachment: scroll;
 	}
 }
+
+/* Mobile fix: trim the slider-one hero on About/Services so it doesn't
+   balloon vertically. The global h1 is 150px/160px which overflows narrow
+   viewports and inflates the slide; the .slider-one .swiper-slide also
+   keeps 350px bottom padding down to 600px. Tighten both for phones. */
+@media (max-width: 767px) {
+	.slider-one .swiper-slide {
+		padding-top: 110px;
+		padding-bottom: 110px;
+	}
+	.slider-one_heading {
+		font-size: 64px;
+		line-height: 70px;
+	}
+	.slider-one_heading i img {
+		max-width: 60px;
+		height: auto;
+	}
+	.slider-one_bold {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.slider-one_text br { display: none; }
+	.slider-one .main-slider-prev,
+	.slider-one .main-slider-next { display: none !important; }
+}
+
+@media (max-width: 480px) {
+	.slider-one_heading {
+		font-size: 52px;
+		line-height: 58px;
+	}
+	.slider-one_bold {
+		font-size: 26px;
+		line-height: 34px;
+	}
+	.slider-one .swiper-slide {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+}
+
+/* Mobile fix: balance discount-one section on phones. Native 16:9 image
+   feels stunted (~196px tall on 349px screen), and the bilingual box
+   (.discount-box with 175px EN/ES circle) feels oversized. Bump the image
+   a bit taller AND trim the box so the two read as proportional.
+   Applies to all pages that use .discount-one (index, services). */
+@media (max-width: 767px) {
+	.discount-one_image { margin-right: 0; margin-left: 0; }
+	.discount-one_image img {
+		aspect-ratio: 5 / 4;
+		height: auto;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 8px;
+	}
+	.discount-one .discount-box { padding: 22px 22px; }
+	.discount-one .discount-box_price {
+		width: 130px;
+		height: 130px;
+		font-size: 32px;
+		padding-top: 32px;
+		margin-bottom: 18px;
+	}
+	.discount-one .discount-box_price span {
+		font-size: 16px;
+		margin-top: 6px;
+	}
+	.discount-one .discount-box h3 {
+		font-size: 22px;
+		line-height: 1.25;
+		margin-bottom: 10px;
+	}
+	.discount-one .discount-box p {
+		font-size: 14px;
+		line-height: 1.55;
+	}
+}
+@media (max-width: 480px) {
+	.discount-one_image img { aspect-ratio: 4 / 3; }
+	.discount-one .discount-box_price {
+		width: 110px;
+		height: 110px;
+		font-size: 28px;
+		padding-top: 26px;
+	}
+	.discount-one .discount-box_price span {
+		font-size: 14px;
+		margin-top: 4px;
+	}
+}
+
+/* Mobile fix: testimonial-two ("What People Say About Working With Us") on
+   the home page uses 130px top + 130px bottom padding with no responsive
+   override, leaving big empty bands above and below the testimonial card
+   on phones. Trim padding and tighten the title margin. */
+@media (max-width: 767px) {
+	.testimonial-two { padding: 60px 0 60px; }
+	.testimonial-two .sec-title { margin-bottom: 28px; }
+}
+@media (max-width: 480px) {
+	.testimonial-two { padding: 48px 0 48px; }
+	.testimonial-two .sec-title { margin-bottom: 22px; }
+}
+
+/* Mobile fix: testimonial-three ("Landowners and Crews We've Worked With")
+   keeps 100px bottom padding even on phones, so there's a big empty band
+   below the pagination dots. Trim it down. */
+@media (max-width: 767px) {
+	.testimonial-three { padding: 60px 0 50px; }
+}
+@media (max-width: 480px) {
+	.testimonial-three { padding: 48px 0 36px; }
+}
+
+/* Mobile fix: shop-three ("Featured Plants — Browse Our Nursery Native
+   Plant Catalog") uses 130px top + 100px bottom on every breakpoint, so
+   there's a big empty band below the carousel on phones. Trim it. */
+@media (max-width: 767px) {
+	.shop-three { padding: 60px 0 50px; }
+}
+@media (max-width: 480px) {
+	.shop-three { padding: 48px 0 36px; }
+}
+
+/* Mobile fix: category-one ("Categories — Restoration Services For Your
+   Land") uses 100px top + 80px bottom with no responsive override, so
+   it feels overpadded on phones. Match the trim pattern. */
+@media (max-width: 767px) {
+	.category-one { padding: 60px 0 50px; }
+}
+@media (max-width: 480px) {
+	.category-one { padding: 48px 0 36px; }
+}
+
+/* Mobile fix: category-two (section above Categories) uses 120px top +
+   110px bottom on every breakpoint. Match the trim pattern. */
+@media (max-width: 767px) {
+	.category-two { padding: 60px 0 50px; }
+}
+@media (max-width: 480px) {
+	.category-two { padding: 48px 0 36px; }
+}
+
+/* Mobile fix: about-one ("Heal The Land, Grow The Future" — sits directly
+   above the "What We Do" section) uses 130px top + 100px bottom. Match
+   the trim pattern. */
+@media (max-width: 767px) {
+	.about-one { padding: 60px 0 50px; }
+}
+@media (max-width: 480px) {
+	.about-one { padding: 48px 0 36px; }
+}
+
+/* Mobile fix: modern-one ("What We Do — Built For The Long View") uses
+   130px top + 110px bottom. The big top padding shows as a cream gap
+   between the previous section's image and the WHAT WE DO eyebrow. */
+@media (max-width: 767px) {
+	.modern-one { padding: 60px 0 50px; }
+}
+@media (max-width: 480px) {
+	.modern-one { padding: 48px 0 36px; }
+}
+
+/* Mobile fix: shop-two (section directly below the hero on the home page)
+   uses 130px top + 100px bottom, leaving big white bands above and below
+   the shop blocks on phones. */
+@media (max-width: 767px) {
+	.shop-two { padding: 60px 0 50px; }
+}
+@media (max-width: 480px) {
+	.shop-two { padding: 48px 0 36px; }
+}
+
+/* Contrast fix: services-six ("What We Offer") cards use white background
+   with body text colored --color-eight (pale sage rgb 149,166,137), which
+   is only ~2.6:1 contrast against white — fails WCAG AA. Bump to a
+   readable neutral. Applies at every breakpoint, not just mobile. */
+.services-six .services-block_five-text { color: #5a5a5a; }
+
+/* Mobile fix: services-six ("Our Why") uses 130/100 padding everywhere,
+   plus the WHY card has heavy padding. Trim both on phones so the section
+   doesn't balloon vertically. */
+@media (max-width: 767px) {
+	.services-six { padding: 60px 0 50px; }
+	.services-six .services-block_five-inner { padding: 28px 22px 28px !important; }
+	/* Center the bouncing leaf icon on mobile, with a slight rightward
+	   offset (the user wants it just past dead-center, leaning right).
+	   Cannot use transform for centering — the bounce animation owns it. */
+	.services-six_bounce-leaf {
+		right: auto !important;
+		left: calc(50% - 25px) !important; /* 110/2 = 55 ; shift right 30px */
+		margin: 0 !important;
+		width: 110px !important;
+		bottom: 8px !important;
+	}
+	.services-six_bounce-leaf img { width: 100% !important; height: auto !important; }
+}
+@media (max-width: 480px) {
+	.services-six { padding: 48px 0 36px; }
+	.services-six .services-block_five-inner { padding: 24px 18px 24px !important; }
+	.services-six_bounce-leaf {
+		width: 90px !important;
+		left: calc(50% - 20px) !important; /* 90/2 = 45 ; shift right 25px */
+	}
+}
+
+/* About page — Canticle Pond right column. Two stacked images use
+   layered overlap on desktop (negative margin-top + side shifts).
+   On mobile, reset all those tricks so the two images stack cleanly
+   one above the other with a normal gap. */
+@media (max-width: 991px) {
+	.canticle-pond-section .fluid-one_image-two { margin: 0 0 32px 0 !important; }
+}
+
+/* About page — Parkridge Pond (Long-Term Project) section.
+   .discount-one_pattern's top:-276px creates excessive cream bleed
+   above the section. Pull it in to a small breathing-room amount
+   instead of going to 0. Plus add modest padding-top on the section
+   so the Long-Term Project eyebrow has room above it. Scoped to
+   .parkridge-section only. */
+.parkridge-section .discount-one_pattern { top: -50px !important; }
+.parkridge-section { padding-top: 50px; }
+
+/* The slider-one hero has a "spinning wheel" badge (the PROTECT • GROW •
+   ECOTONES • RESTORE circular logo with experiance.png) anchored to the
+   bottom of the hero. The wheel image extends below the section's bottom
+   edge into the next section, where torn-paper top decorations (z-index:3)
+   were covering it. Bump the wheel above any z-index:3 decoration. */
+.slider-one_icon { z-index: 50 !important; }
+
+/* Services page — Service Area / "Stewardship Across Northern California"
+   section. Default .about-one padding is 130px top — too much empty
+   space above the welcome-founder.jpg image on mobile. Also the hidden
+   green check banner uses visibility:hidden which preserves desktop
+   height intentionally, but on mobile that invisible space sits between
+   the content and the image creating an awkward gap. Drop to display:none
+   on mobile only. */
+@media (max-width: 767px) {
+	.about-one.service-area { padding-top: 50px !important; padding-bottom: 50px !important; }
+	.about-one.service-area .about-one_check[style*="visibility:hidden"] { display: none !important; }
+}
+@media (max-width: 480px) {
+	.about-one.service-area { padding-top: 36px !important; padding-bottom: 36px !important; }
+}
+
+/* Services page — Custodians section ("We're Custodians Of The Natural
+   Landscape"). The .discount-one.style-two has padding-top:100px which
+   leaves a big empty band above the heading on mobile (where the column
+   ordering puts content first). Trim. Also hide the corner-leaf decor
+   on mobile where it overlaps the heading. */
+@media (max-width: 991px) {
+	/* Section uses overflow:visible on desktop so the corner-leaf decor can
+	   show fully. On mobile that lets the color-layer bleed 260px up into
+	   the section above — restore overflow:hidden for phones/tablets. */
+	.discount-one.style-two { overflow: hidden !important; }
+}
+@media (max-width: 767px) {
+	.discount-one.style-two { padding-top: 40px !important; padding-bottom: 50px !important; }
+	.custodians-decor { display: none !important; }
+}
+@media (max-width: 480px) {
+	.discount-one.style-two { padding-top: 28px !important; padding-bottom: 36px !important; }
+}
+
+/* Services page — Bilingual Trainings section. Section has inline
+   padding:80px 0 140px on desktop. On mobile that's excessive empty
+   space above the heading and below the image. Also the .about-one_check
+   uses visibility:hidden (preserves desktop height intentionally), but
+   on mobile that invisible space adds ~100-120px of unwanted gap — drop
+   it to display:none on mobile only. */
+@media (max-width: 991px) {
+	section.about-one[style*="padding:80px 0 140px"] { padding: 50px 0 50px !important; }
+	section.about-one[style*="padding:80px 0 140px"] .about-one_check[style*="visibility:hidden"] { display: none !important; }
+}
+@media (max-width: 480px) {
+	section.about-one[style*="padding:80px 0 140px"] { padding: 36px 0 36px !important; }
+}
+
+/* Services page — Custodians section. The vertical pond-clip video and
+   the negative-margin content-pull-up are desktop-only design moves. On
+   mobile the columns stack — keeping the inline absolute video and the
+   negative content margin would push elements off-screen and overlap
+   the image. Reset both for ≤991px. */
+@media (max-width: 991px) {
+	.custodians-video {
+		position: relative !important;
+		right: auto !important;
+		top: auto !important;
+		width: 100% !important;
+		max-width: none !important;
+		aspect-ratio: 4 / 3 !important;
+		margin: 16px 0 0 !important;
+		display: block;
+		border-radius: 8px !important;
+		border: none !important;
+	}
+	.custodians-content {
+		margin-top: 0 !important;
+	}
+}
+
+/* About page — Canticle Pond section. The "Habitat That Holds" caption
+   sits under the small pond-2.jpg image on the right column. On mobile
+   (where columns stack) it reads beautifully. On desktop the right column
+   would overflow the section's bottom because the image + caption stack
+   is taller than the 3 feature blocks on the left. Hide caption on
+   desktop only — content works in mobile context, preserves desktop sizing. */
+@media (min-width: 992px) {
+	.canticle-pond_caption { display: none; }
+}
+
+/* Mobile only: trim the .fluid-one .right-box bottom padding (the existing
+   rule sets 80px bottom on small screens, leaving a big empty band under
+   the Habitat caption). */
+@media (max-width: 991px) {
+	.fluid-one .right-box { padding-bottom: 30px !important; }
+}
+
+/* Mobile fix: welcome-one ("Rooted In Northern California" on /about).
+   Trim the top padding so the title sits closer to the section above. */
+@media (max-width: 767px) {
+	.welcome-one { padding-top: 50px; padding-bottom: 50px; }
+}
+@media (max-width: 480px) {
+	.welcome-one { padding-top: 36px; padding-bottom: 36px; }
+}
+
+/* Mobile fix: testimonial-one ("What Our Customers Have To Say" on /about).
+   The 234px circular image + the section's 130px bottom padding make each
+   card absurdly tall on phones. Shrink the image and trim the section
+   padding to the standard mobile rhythm we use elsewhere on the site. */
+@media (max-width: 767px) {
+	.testimonial-one { padding: 60px 0 50px; }
+	.testimonial-block_one-image img {
+		width: 140px !important;
+		height: 140px !important;
+	}
+	.testimonial-block_one-inner { padding: 30px 24px 36px; }
+}
+@media (max-width: 480px) {
+	.testimonial-one { padding: 48px 0 36px; }
+	.testimonial-block_one-image img {
+		width: 110px !important;
+		height: 110px !important;
+	}
+	.testimonial-block_one-inner { padding: 24px 20px 28px; }
+}
+
+/* Mobile fix: contact page — kill the big empty gap between the hero
+   (.page-title.contact-hero) and the staff card (.contact-two). Hero
+   keeps a substantial bottom on desktop (180px); contact-two keeps 110px
+   top + 240px bottom. Stacked on a phone that's huge dead space. */
+@media (max-width: 767px) {
+	.page-title.contact-hero { padding-bottom: 40px; }
+	.contact-two { padding: 40px 0 60px; }
+}
+@media (max-width: 480px) {
+	.page-title.contact-hero { padding-bottom: 32px; }
+	.contact-two { padding: 32px 0 48px; }
+}
+
+/* Mobile fix: shop page — .shop-one (the listing section with "Showing
+   1–12 of 13 results") uses 130px top + 130px bottom. Trim the top so
+   the results header sits closer to the hero on phones. */
+@media (max-width: 767px) {
+	.shop-one { padding: 50px 0 60px; }
+}
+@media (max-width: 480px) {
+	.shop-one { padding: 36px 0 48px; }
+}
+
+/* Mobile fix: fluid-one ("What We Do — Stewardship That Stays With The
+   Land"). Native 16:9 image renders ~196px tall on a 349px phone, leaving
+   the play button cramped in a thin strip. Force a taller aspect ratio
+   with object-fit cover, give the photo rounded corners, and pad the
+   image area so it reads as a video card on phones. */
+@media (max-width: 990px) {
+	.fluid-one .left-box {
+		margin: 0 14px 28px;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0 14px 32px -16px rgba(0,0,0,0.4);
+	}
+	.fluid-one_image img {
+		aspect-ratio: 5 / 4;
+		height: auto;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+@media (max-width: 480px) {
+	.fluid-one_image img { aspect-ratio: 4 / 3; }
+	/* Play button slightly smaller on narrow phones so it sits naturally on the photo. */
+	.fluid-one_play span {
+		width: 92px;
+		height: 92px;
+		line-height: 92px;
+		font-size: 22px;
+	}
+	.fluid-one_play:before {
+		left: -10px; top: -10px; right: -10px; bottom: -10px;
+	}
+}
