@@ -3381,12 +3381,17 @@
 
 .slider-three-arrow{
 	position: absolute;
-	left: 110px;
+	/* Nav centred horizontally on the page and dropped down into the
+	   open band below the CTA/photo, so it stands alone to the right of
+	   the "Request a Quote" button without overlapping text or image. */
+	left: 0px;
+	right: 0px;
 	z-index:1;
-	bottom: 140px;
-	right:0px;
-	text-align:left;
+	bottom: 150px;
+	margin:0 auto;
 	max-width:100%;
+	padding:0px;
+	text-align:center;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -3420,14 +3425,8 @@
 }
 
 .slider-three .main-slider-prev:before{
-	position:absolute;
-	content:'';
-	left:-7px;
-	top:0px;
-	right:-7px;
-	bottom:0px;
-	border-radius:30px;
-	outline: 1px solid var(--main-color);
+	/* Border frame removed — leave just the solid green button. */
+	display:none;
 }
 
 .slider-three .main-slider-prev:hover{
@@ -3468,24 +3467,13 @@
 }
 
 .slider-three .main-slider-next:before{
-	position:absolute;
-	content:'';
-	left:-7px;
-	top:0px;
-	right:-7px;
-	bottom:0px;
-	border-radius:30px;
-	outline: 1px solid var(--main-color);
+	/* Border frame removed — leave just the solid green button. */
+	display:none;
 }
 
 .slider-three .main-slider-next:after{
-	position: absolute;
-	content:'';
-	left:100%;
-	top:50%;
-	width:500%;
-	height:2px;
-	background-color:var(--color-four);
+	/* Trailing connector line removed so nothing crosses the image. */
+	display:none;
 }
 
 .slider-three .swiper-slide{
@@ -3567,7 +3555,10 @@
 	text-align:left;
 	max-width:620px;
 	padding-top:5px;
-	padding-left:20px;
+	/* Nudged left to rebalance now that the nav buttons no longer sit
+	   in the bottom-left corner. */
+	padding-left:0px;
+	margin-left:-25px;
 }
 
 .slider-three_heading{
@@ -3576,7 +3567,9 @@
 	font-weight:800;
 	line-height:100px;
 	color: var(--color-four);
-	text-transform: capitalize;
+	/* Sentence case: text is written first-letter-capital, rest lowercase;
+	   'none' lets it render exactly as typed. */
+	text-transform: none;
 
 	transition:all 900ms ease;
 	-moz-transition:all 900ms ease;
@@ -3590,8 +3583,10 @@
 .slider-three_content-inner:before{
 	position:absolute;
 	content:'';
-	left:0px;
-	top:-4px;
+	/* L-bracket top bar — nudged out from the text for a little more
+	   breathing room between the frame and the heading. */
+	left:-16px;
+	top:-16px;
 	width:90px;
 	height:2px;
 	background-color:var(--color-three);
@@ -3600,8 +3595,9 @@
 .slider-three_content-inner:after{
 	position:absolute;
 	content:'';
-	left:0px;
-	top:-3px;
+	/* L-bracket left bar — matches the top bar's outward offset. */
+	left:-16px;
+	top:-16px;
 	width:2px;
 	height:310px;
 	background-color:var(--main-color);
@@ -6928,6 +6924,9 @@
 
 .contact-three{
 	position:relative;
+	/* Vertical breathing room now that the form box sits in the white
+	   section instead of overlapping the hero. */
+	padding:80px 0px 90px;
 }
 
 .contact-three .auto-container{
@@ -6937,9 +6936,86 @@
 
 .contact-three .inner-container{
 	position:relative;
-	margin-top:-130px;
+	/* Was margin-top:-130px, which pulled this white box up over the green
+	   hero. Zeroed so the form lives only in the white section. */
+	margin-top:0px;
 	padding:90px 190px 90px;
 	background-color:var(--color-thirtynine);
+}
+
+/* ====================================================================
+	Contact page — "Get In Touch" block above the form
+	--------------------------------------------------------------
+	Two-column contact info inside the white form box. Mirrors the
+	footer's round-icon list, recoloured for the light panel.
+==================================================================== */
+
+.contact-info{
+	position:relative;
+	margin-bottom:55px;
+	padding-bottom:45px;
+	border-bottom:1px solid rgba(40,56,29,0.15);
+}
+
+.contact-info_title{
+	position:relative;
+	font-size:26px;
+	line-height:34px;
+	margin-bottom:30px;
+	color:var(--color-two);
+	font-family:"Outfit", sans-serif;
+}
+
+.contact-info_list{
+	position:relative;
+}
+
+.contact-info_list li{
+	position:relative;
+	display:flex;
+	align-items:center;
+	gap:16px;
+	min-height:44px;
+	margin-bottom:22px;
+	font-size:18px;
+	color:var(--color-two);
+	font-family:"Outfit", sans-serif;
+}
+
+.contact-info_list li:last-child{
+	margin-bottom:0px;
+}
+
+.contact-info_list li .icon{
+	flex:0 0 44px;
+	/* Flex-centre the glyph so the Font Awesome Instagram mark lands dead
+	   centre like the ecotones-icon glyphs, whose metrics differ. */
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:44px;
+	height:44px;
+	border-radius:50%;
+	color:var(--white-color);
+	background-color:var(--color-three);
+	font-family:"ecotones-icons";
+}
+
+.contact-info_list li .icon .fa-brands{
+	font-family:'Font Awesome 6 Brands';
+	/* Slightly larger so the Instagram mark reads at the same visual
+	   weight as the other three icons. */
+	font-size:19px;
+	line-height:1;
+}
+
+.contact-info_list li a{
+	color:var(--color-two);
+	font-weight:500;
+}
+
+.contact-info_list li a:hover{
+	color:var(--main-color);
 }
 
 .contact-three_form-column{
@@ -11362,4 +11438,187 @@ html, body{
 		border-bottom: 1px solid rgba(255,255,255,0.18) !important;
 	}
 
+}
+
+/* ====================================================================
+	About page — founder biography
+	--------------------------------------------------------------
+	Clean two-column section: portrait left, short bio right. Uses the
+	standard .sec-title heading; scoped to .founder-bio so it never
+	touches other pages (section-independence rule).
+==================================================================== */
+
+.founder-bio{
+	position:relative;
+	/* First section on the page now that the hero is gone, so the top
+	   padding also has to clear the ~100px absolute site header. */
+	padding:180px 0px 100px;
+	background-color:var(--white-color);
+}
+
+.founder-bio_image-column{
+	position:relative;
+	margin-bottom:30px;
+}
+
+.founder-bio_image{
+	position:relative;
+	border-top-right-radius:60px;
+	border-bottom-left-radius:60px;
+	overflow:hidden;
+}
+
+.founder-bio_image img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+
+.founder-bio_content-column{
+	position:relative;
+}
+
+.founder-bio_content{
+	position:relative;
+	padding-left:40px;
+}
+
+.founder-bio_text{
+	position:relative;
+	font-size:17px;
+	line-height:30px;
+	margin-bottom:20px;
+	color:var(--color-two);
+}
+
+.founder-bio_text:last-child{
+	margin-bottom:0px;
+}
+
+@media (max-width:991px){
+	.founder-bio{ padding:140px 0px 60px; }
+	.founder-bio_content{ padding-left:0px; }
+}
+
+/* ====================================================================
+	About page — corner botanicals (decorative)
+	--------------------------------------------------------------
+	Test placement using existing leaf art (no bespoke assets). One in
+	each corner of the founder section — far left + far right, top and
+	bottom. Sepia/desaturate ties them to the two-tone palette.
+==================================================================== */
+
+.corner-botanical {
+	position: absolute;
+	opacity: 0.35;
+	filter: sepia(1) saturate(0.6) hue-rotate(-10deg);
+	pointer-events: none;
+}
+
+.founder-bio{ overflow:hidden; }
+.founder-bio .auto-container{ position:relative; z-index:1; }
+
+.corner-botanical{ width:300px; height:auto; z-index:0; }
+
+/* Each leaf's base sits in its corner and fans into the page. */
+.corner-botanical--tl{ top:-30px; left:-50px; transform:scaleX(-1); }
+.corner-botanical--tr{ top:-30px; right:-50px; }
+.corner-botanical--bl{ bottom:-30px; left:-50px; transform:scale(-1,-1); }
+.corner-botanical--br{ bottom:-30px; right:-50px; transform:scaleY(-1); }
+
+@media (max-width:991px){
+	.corner-botanical{ width:180px; }
+}
+
+/* ====================================================================
+	Services page — service blocks
+	--------------------------------------------------------------
+	Clean alternating photo/text rows (no decorative icons or plant
+	art). Uses the standard .sec-title heading; scoped to
+	.service-block so it stays off every other page.
+==================================================================== */
+
+.service-block{
+	position:relative;
+	padding:80px 0px;
+	background-color:var(--white-color);
+}
+
+.service-block + .service-block{
+	border-top:1px solid rgba(40,56,29,0.10);
+}
+
+.service-block_image{
+	position:relative;
+	border-top-right-radius:60px;
+	border-bottom-left-radius:60px;
+	overflow:hidden;
+}
+
+.service-block_image img{
+	display:block;
+	width:100%;
+	height:auto;
+	object-fit:cover;
+}
+
+.service-block_image-column{
+	margin-bottom:30px;
+}
+
+.service-block_content{
+	position:relative;
+	padding-left:30px;
+}
+
+.service-block_content .sec-title{
+	margin-bottom:0px;
+}
+
+.service-block_list{
+	position:relative;
+	margin-top:28px;
+}
+
+.service-block_list li{
+	position:relative;
+	padding-left:28px;
+	margin-bottom:14px;
+	font-size:17px;
+	line-height:28px;
+	color:var(--color-two);
+	font-family:"Outfit", sans-serif;
+}
+
+.service-block_list li:last-child{
+	margin-bottom:0px;
+}
+
+.service-block_list li:before{
+	position:absolute;
+	content:"\203A";
+	left:0px;
+	top:-2px;
+	font-size:18px;
+	font-weight:700;
+	color:var(--main-color);
+}
+
+/* Even rows: image on the right, content on the left. */
+.service-block--reverse .row{
+	flex-direction:row-reverse;
+}
+
+.service-block--reverse .service-block_content{
+	padding-left:0px;
+	padding-right:30px;
+}
+
+@media (max-width:991px){
+	.service-block{ padding:50px 0px; }
+	.service-block_content,
+	.service-block--reverse .service-block_content{
+		padding-left:0px;
+		padding-right:0px;
+	}
 }

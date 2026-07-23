@@ -1140,7 +1140,11 @@
 .header-style-three{
 	top:0px;
 	min-height:100px;
-	background-color:var(--color-nineteen);
+	/* No background: the 90px white .inner-container sits inside a 100px
+	   header, so a header background shows as a thin strip along the
+	   bottom edge. Everything meant to be visible is painted by
+	   .inner-container and .logo-box. */
+	background-color:transparent;
 }
 
 .header-style-three .header-lower .header-phone_icon{

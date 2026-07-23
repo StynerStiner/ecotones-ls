@@ -2043,3 +2043,199 @@ img{
     -ms-flex-pack: start;
     justify-content: flex-start;
 }
+
+/*
+====================================================================
+	Two-tone trim palette — home / about / services / contact
+	--------------------------------------------------------------
+	Collapses every palette token to the two colors taken from the
+	circular corporate label: the fern-green ink (#28381D) and the
+	white of the disc (#FFFFFF). Light tokens (creams, tints, light
+	backgrounds) map to white; every mid/dark token maps to the green,
+	so the light/dark structure of the design survives while the hue
+	range narrows to one green.
+
+	Scoped to body.palette-label so pages that are not in scope
+	(shop, gallery, blog, legal, 404, ...) keep the full palette.
+====================================================================
+*/
+body.palette-label {
+	--main-color: rgb(40,56,29);
+	--main-color-rgb:40,56,29;
+	--color-two: rgb(40,56,29);
+	--color-two-rgb:40,56,29;
+	--color-three: rgb(40,56,29);
+	--color-three-rgb:40,56,29;
+	--color-four: rgb(40,56,29);
+	--color-four-rgb:40,56,29;
+	--color-five: rgb(40,56,29);
+	--color-five-rgb:40,56,29;
+	--color-six: rgb(40,56,29);
+	--color-six-rgb:40,56,29;
+	--color-seven: rgb(255,255,255);
+	--color-seven-rgb:255,255,255;
+	--color-eight: rgb(40,56,29);
+	--color-eight-rgb:40,56,29;
+	--color-nine: rgb(40,56,29);
+	--color-nine-rgb:40,56,29;
+	--color-ten: rgb(255,255,255);
+	--color-ten-rgb:255,255,255;
+	--color-eleven: rgb(255,255,255);
+	--color-eleven-rgb:255,255,255;
+	--color-twelve: rgb(40,56,29);
+	--color-twelve-rgb:40,56,29;
+	--color-thirteen: rgb(40,56,29);
+	--color-thirteen-rgb:40,56,29;
+	--color-fourteen: rgb(40,56,29);
+	--color-fourteen-rgb:40,56,29;
+	--color-fifteen: rgb(255,255,255);
+	--color-fifteen-rgb:255,255,255;
+	--color-sixteen: rgb(255,255,255);
+	--color-sixteen-rgb:255,255,255;
+	--color-seventeen: rgb(255,255,255);
+	--color-seventeen-rgb:255,255,255;
+	--color-eighteen: rgb(40,56,29);
+	--color-eighteen-rgb:40,56,29;
+	--color-nineteen: rgb(40,56,29);
+	--color-nineteen-rgb:40,56,29;
+	--color-twenty: rgb(255,255,255);
+	--color-twenty-rgb:255,255,255;
+	--color-twentyone: rgb(40,56,29);
+	--color-twentyone-rgb:40,56,29;
+	--color-twentytwo: rgb(40,56,29);
+	--color-twentytwo-rgb:40,56,29;
+	--color-twentythree: rgb(40,56,29);
+	--color-twentythree-rgb:40,56,29;
+	--color-twentyfour: rgb(255,255,255);
+	--color-twentyfour-rgb:255,255,255;
+	--color-twentyfive: rgb(40,56,29);
+	--color-twentyfive-rgb:40,56,29;
+	--color-twentysix: rgb(255,255,255);
+	--color-twentysix-rgb:255,255,255;
+	--color-twentyseven: rgb(40,56,29);
+	--color-twentyseven-rgb:40,56,29;
+	--color-twentyeight: rgb(40,56,29);
+	--color-twentyeight-rgb:40,56,29;
+	--color-twentynine: rgb(40,56,29);
+	--color-twentynine-rgb:40,56,29;
+	--color-thirty: rgb(40,56,29);
+	--color-thirty-rgb:40,56,29;
+	--color-thirtyone: rgb(40,56,29);
+	--color-thirtyone-rgb:40,56,29;
+	--color-thirtytwo: rgb(255,255,255);
+	--color-thirtytwo-rgb:255,255,255;
+	--color-thirtythree: rgb(40,56,29);
+	--color-thirtythree-rgb:40,56,29;
+	--color-thirtyfour: rgb(255,255,255);
+	--color-thirtyfour-rgb:255,255,255;
+	--color-thirtyfive: rgb(40,56,29);
+	--color-thirtyfive-rgb:40,56,29;
+	--color-thirtysix: rgb(255,255,255);
+	--color-thirtysix-rgb:255,255,255;
+	--color-thirtyseven: rgb(255,255,255);
+	--color-thirtyseven-rgb:255,255,255;
+	--color-thirtyeight: rgb(40,56,29);
+	--color-thirtyeight-rgb:40,56,29;
+	--color-thirtynine: rgb(255,255,255);
+	--color-thirtynine-rgb:255,255,255;
+	--color-fourty: rgb(255,255,255);
+	--color-fourty-rgb:255,255,255;
+	--color-fourtyone: rgb(40,56,29);
+	--color-fourtyone-rgb:40,56,29;
+	--color-fourtytwo: rgb(255,255,255);
+	--color-fourtytwo-rgb:255,255,255;
+	--color-fourtythree: rgb(40,56,29);
+	--color-fourtythree-rgb:40,56,29;
+	--color-fourtyfour: rgb(255,255,255);
+	--color-fourtyfour-rgb:255,255,255;
+	--color-fourtyfive: rgb(255,255,255);
+	--color-fourtyfive-rgb:255,255,255;
+	--color-fourtysix: rgb(255,255,255);
+	--color-fourtysix-rgb:255,255,255;
+	--color-fourtyseven: rgb(40,56,29);
+	--color-fourtyseven-rgb:40,56,29;
+	--color-fourtyeight: rgb(40,56,29);
+	--color-fourtyeight-rgb:40,56,29;
+	--color-fourtynine: rgb(255,255,255);
+	--color-fourtynine-rgb:255,255,255;
+	--color-fifty: rgb(255,255,255);
+	--color-fifty-rgb:255,255,255;
+	--color-fiftyone: rgb(40,56,29);
+	--color-fiftyone-rgb:40,56,29;
+	--color-fiftytwo: rgb(255,255,255);
+	--color-fiftytwo-rgb:255,255,255;
+	--color-fiftythree: rgb(255,255,255);
+	--color-fiftythree-rgb:255,255,255;
+	--color-fiftyfour: rgb(40,56,29);
+	--color-fiftyfour-rgb:40,56,29;
+	--color-fiftyfive: rgb(255,255,255);
+	--color-fiftyfive-rgb:255,255,255;
+	--color-fiftysix: rgb(40,56,29);
+	--color-fiftysix-rgb:40,56,29;
+	--color-fiftyseven: rgb(40,56,29);
+	--color-fiftyseven-rgb:40,56,29;
+	--color-fiftyeight: rgb(255,255,255);
+	--color-fiftyeight-rgb:255,255,255;
+	--color-fiftynine: rgb(255,255,255);
+	--color-fiftynine-rgb:255,255,255;
+	--color-sixty: rgb(40,56,29);
+	--color-sixty-rgb:40,56,29;
+	--color-sixtyone: rgb(40,56,29);
+	--color-sixtyone-rgb:40,56,29;
+	--color-sixtytwo: rgb(255,255,255);
+	--color-sixtytwo-rgb:255,255,255;
+	--color-sixtythree: rgb(40,56,29);
+	--color-sixtythree-rgb:40,56,29;
+	--color-sixtyfour: rgb(40,56,29);
+	--color-sixtyfour-rgb:40,56,29;
+	--color-sixtyfive: rgb(40,56,29);
+	--color-sixtyfive-rgb:40,56,29;
+	--color-sixtysix: rgb(255,255,255);
+	--color-sixtysix-rgb:255,255,255;
+	--color-sixtyseven: rgb(255,255,255);
+	--color-sixtyseven-rgb:255,255,255;
+	--color-sixtyeight: rgb(255,255,255);
+	--color-sixtyeight-rgb:255,255,255;
+	--color-sixtynine: rgb(255,255,255);
+	--color-sixtynine-rgb:255,255,255;
+	--color-seventy: rgb(255,255,255);
+	--color-seventy-rgb:255,255,255;
+	--color-seventyone: rgb(40,56,29);
+	--color-seventyone-rgb:40,56,29;
+	--color-seventytwo: rgb(255,255,255);
+	--color-seventytwo-rgb:255,255,255;
+	--color-seventythree: rgb(255,255,255);
+	--color-seventythree-rgb:255,255,255;
+	--color-seventyfour: rgb(255,255,255);
+	--color-seventyfour-rgb:255,255,255;
+	--color-seventyfive: rgb(40,56,29);
+	--color-seventyfive-rgb:40,56,29;
+}
+
+/* Slider One hero accent letters ship as brand orange (#FFAC4A) from
+   style.css. Inside the two-tone scope they follow the label green. */
+body.palette-label .slider-one_heading span[style*="background-clip"]{
+	-webkit-text-fill-color: rgb(40,56,29) !important;
+	color: rgb(40,56,29) !important;
+}
+
+/* The footer's light plants-and-pots backdrop was removed, so .main-footer
+   now shows its own dark green. Link and icon colors that used to sit on
+   that light image need to flip to white to stay legible. */
+body.palette-label .footer-list li a,
+body.palette-label .footer-list li a::before,
+body.palette-label .footer-contact_list li,
+body.palette-label .footer-contact_list li a,
+body.palette-label .footer-contact_list li .icon,
+body.palette-label .footer_socials a,
+body.palette-label .main-footer_copyright{
+	/* !important to beat .footer-contact_list > li a in style.css, which pins
+	   the email link to --main-color (now the same green as the footer). */
+	color: var(--white-color) !important;
+}
+
+body.palette-label .footer-list li a:hover,
+body.palette-label .footer-contact_list li a:hover,
+body.palette-label .footer_socials a:hover{
+	color: rgba(var(--white-color-rgb), 0.70);
+}

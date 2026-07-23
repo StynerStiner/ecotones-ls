@@ -704,12 +704,15 @@
 	if($('#contact-form').length){
 		$('#contact-form').validate({
 			rules: {
-				username: {
+				name: {
 					required: true
 				},
 				email: {
 					required: true,
 					email: true
+				},
+				phone: {
+					required: true
 				},
 				message: {
 					required: true

@@ -14,6 +14,12 @@ venv/
 # Node (in case)
 node_modules/
 
+# Vercel
+.vercel
+
+# Refact.ai IDE agent metadata
+.refact/
+
 # Local-only parking folder for unused assets pulled out of the project
 _unused-assets/
 
