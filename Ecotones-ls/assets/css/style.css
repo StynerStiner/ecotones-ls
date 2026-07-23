@@ -11157,15 +11157,89 @@ html, body{
 	overflow-x: hidden !important;
 }
 
-@media only screen and (max-width: 767px){
+/* --- Hero (slider-three) — mobile & tablet full-bleed photo ---
+   The desktop split layout only shows the hero photo above 1140px; below that
+   the image was hidden, leaving a tall empty void, and the heading clipped off
+   the left edge (negative margin under overflow-x:hidden). Across the whole
+   ≤1140 range we now show the photo as a full-bleed cover background with a
+   dark scrim and readable white text — guttered and pinned to the viewport so
+   nothing clips or overflows. Fluid clamp() sizing scales phone → tablet. */
+@media only screen and (max-width: 1140px){
 
-	/* --- Hero (slider-three) --- shrink + hide decorative overlays */
 	.slider-three .swiper-slide{
-		height: 640px !important;
+		height: 560px !important;
+		padding: 0 !important;
+		display: flex !important;
+		align-items: center !important;
 	}
+	/* Photo becomes a full-bleed cover background of the whole hero */
 	.slider-three_image-layer{
+		display: block !important;
+		left: 0 !important;
+		right: 0 !important;
+		top: 0 !important;
 		bottom: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+		clip-path: none !important;
+		background-size: cover !important;
+		background-position: center center !important;
+		/* dark scrim keeps the white text readable over any photo */
+		box-shadow: inset 0 0 0 2000px rgba(22, 42, 16, 0.5) !important;
+		z-index: 0 !important;
 	}
+	.slider-three .swiper-slide-active .slider-three_image-layer{
+		clip-path: none !important;
+	}
+	/* Text: real side gutters, no negative-margin overflow, above the photo.
+	   Width is pinned to the viewport so a wide Swiper slide can't push the
+	   text off the right edge, and long lines wrap instead of overflowing. */
+	.slider-three .swiper-slide .auto-container{
+		width: 100vw !important;
+		max-width: 100vw !important;
+		padding-left: 24px !important;
+		padding-right: 24px !important;
+		margin: 0 auto !important;
+	}
+	.slider-three_content{
+		z-index: 3 !important;
+	}
+	.slider-three_content-inner{
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		width: 100% !important;
+		max-width: calc(100vw - 48px) !important;
+	}
+	/* Show heading/body/button in full (kill the desktop clip-path reveal that
+	   caught the text half-revealed) and let long lines wrap. */
+	.slider-three_heading,
+	.slider-three_text,
+	.slider-three .slider-three_button{
+		clip-path: none !important;
+		opacity: 1 !important;
+	}
+	.slider-three_heading,
+	.slider-three_text{
+		max-width: 100% !important;
+		overflow-wrap: break-word !important;
+		word-break: break-word !important;
+	}
+	/* Hide the desktop L-bracket frame (was 310px tall, ran past the text) */
+	.slider-three_content-inner:before,
+	.slider-three_content-inner:after{
+		display: none !important;
+	}
+	.slider-three_heading{
+		font-size: clamp(32px, 5vw, 56px) !important;
+		line-height: 1.15 !important;
+		color: #ffffff !important;
+	}
+	.slider-three_text{
+		font-size: clamp(15px, 2vw, 19px) !important;
+		line-height: 1.7 !important;
+		color: #ffffff !important;
+	}
+	/* keep decorative overlays hidden (harmless if absent) */
 	.slider-three_icon,
 	.slider-three_icon-two,
 	.slider-three_pattern-two,
@@ -11176,23 +11250,16 @@ html, body{
 	.slider-three .swiper-slide > img[style*="position:absolute"]:not([src*="frogs/"]){
 		display: none !important;
 	}
-	/* Keep the frog visible on mobile but scale it down */
 	.slider-three .swiper-slide > img[src*="frogs/"]{
-		width: 140px !important;
+		width: 120px !important;
 		right: 4% !important;
-		bottom: 20px !important;
+		bottom: 16px !important;
+		z-index: 4 !important;
 	}
-	.slider-three_heading{
-		font-size: 32px !important;
-		line-height: 1.15 !important;
-	}
-	.slider-three_text{
-		font-size: 14px !important;
-	}
-	/* Move text + buttons up on mobile — just shift the content, nothing else */
-	.slider-three .swiper-slide{
-		padding-top: 50px !important;
-	}
+
+}
+
+@media only screen and (max-width: 767px){
 
 	/* --- Shop Two — hide left/right floating leaves --- */
 	.shop-two > div[style*="float_up_down"]{

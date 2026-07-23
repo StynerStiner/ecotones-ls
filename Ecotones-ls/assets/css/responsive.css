@@ -2055,3 +2055,13 @@
 		left: -10px; top: -10px; right: -10px; bottom: -10px;
 	}
 }
+
+/* Mobile fix: Contact "Get In Touch". The left column's last row is the
+   phone (margin-bottom:0 as :last-child) and the right column's first row
+   is the email, so when the two columns stack on phones those two icon
+   rows touch. Restore the normal 22px row rhythm above the second column. */
+@media (max-width: 767px) {
+	.contact-info .row > [class*="col-"] + [class*="col-"] {
+		margin-top: 22px;
+	}
+}

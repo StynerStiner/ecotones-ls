@@ -717,6 +717,43 @@
 				message: {
 					required: true
 				}
+			},
+			submitHandler: function(form){
+				// Submit to Web3Forms via AJAX so the confirmation shows inline
+				// (the form slides away, a "Message received" note fades in) with
+				// no page reload. The form's method/action + redirect field remain
+				// as a graceful fallback if JavaScript is unavailable.
+				var $form = $(form);
+				var $wrap = $form.closest('.contact-form');
+				var $btn  = $form.find('button[type="submit"]');
+				$wrap.find('.contact-form_error').hide();
+				$btn.prop('disabled', true).css('opacity', 0.7);
+				fetch(form.action, {
+					method: 'POST',
+					headers: { 'Accept': 'application/json' },
+					body: new FormData(form)
+				})
+				.then(function(r){ return r.json().then(function(j){ return { ok: r.ok, data: j }; }); })
+				.then(function(res){
+					if(res.ok && res.data.success){
+						// Keep the form in place — just clear it and confirm above it.
+						form.reset();
+						var validator = $form.data('validator');
+						if(validator){ validator.resetForm(); }
+						$btn.prop('disabled', false).css('opacity', 1);
+						var $ok = $wrap.find('.contact-form_success');
+						$ok.hide().fadeIn(400);
+						setTimeout(function(){ $ok.fadeOut(500); }, 7000);
+					} else {
+						$btn.prop('disabled', false).css('opacity', 1);
+						$wrap.find('.contact-form_error').fadeIn(300);
+					}
+				})
+				.catch(function(){
+					$btn.prop('disabled', false).css('opacity', 1);
+					$wrap.find('.contact-form_error').fadeIn(300);
+				});
+				return false;
 			}
 		});
 	}

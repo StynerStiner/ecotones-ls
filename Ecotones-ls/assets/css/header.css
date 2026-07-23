@@ -1238,11 +1238,29 @@
 .mobile-menu .nav-logo{
 	position:relative;
 	padding:20px 20px;
-	text-align:left;	
+	text-align:left;
+	background-color:var(--main-color);
 }
 
 .mobile-menu .nav-logo img{
-	max-width:200px;
+	max-width:112px;
+	filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));
+}
+
+/* Short "Ecotones LS" wordmark next to the emblem — same as the mobile header bar */
+.mobile-menu .nav-logo::after{
+	content:"Ecotones LS";
+	position:absolute;
+	left:78px;
+	top:50%;
+	transform:translateY(-50%);
+	font-size:16px;
+	font-weight:800;
+	letter-spacing:0.6px;
+	color:#ffffff;
+	text-transform:uppercase;
+	white-space:nowrap;
+	pointer-events:none;
 }
 
 .mobile-menu-visible{
